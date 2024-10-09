@@ -1,14 +1,60 @@
 ﻿@page "/"
+@using MiriJoraYakus.Enums
+<style>
+    img.cardGrid
+    {
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
 
+    img.dimmed {
+        filter:brightness(25%)
+    }
+</style>
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
-@for (int i=0;i<9;i++)
+@for (int i = 0; i < 9; i++)
 {
-    
+
 }
 Welcome to your new app.
-
+<hr>
+<table style=" width:100%">
+    @for (int i = 0; i < totalCards / perRow; i++)
+    {
+        <tr>
+            @for (int j = 0; j < perRow; j++)
+            {
+                int n = i * perRow + j;
+                if (n < totalCards)
+                {
+                    <td>
+                        <img class="cardGrid @(available[(IdolEnum)n]?"normal":"dimmed")" src=@("/IdolIcons/"+(n+1)+".png")
+                        @oncontextmenu="()=>ToggleAvailable(n)" @oncontextmenu:preventDefault="true"/>
+                    </td>
+                }
+            }
+        </tr>
+    }
+</table>
 @code {
-    private int[] hand = new int[9];
+    List<CardEnum> hand = new List<CardEnum>();
+    private int maxHandSize = 9;
+    private int totalCards = 52;
+    private int perRow = 13;
+    private Dictionary<IdolEnum, bool> available = new Dictionary<IdolEnum, bool>();
+    protected override async Task OnInitializedAsync()
+    {
+        foreach (IdolEnum a in Enum.GetValues(typeof(IdolEnum)))
+        {
+            available[a] = true;
+        }
+    }
+    private void ToggleAvailable(int n)
+    {
+        available[(IdolEnum)n] = !available[(IdolEnum)n];
+        StateHasChanged();
+    }
 }
