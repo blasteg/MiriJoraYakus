@@ -1,24 +1,32 @@
 ﻿@page "/"
 @using MiriJoraYakus.Enums
+@inject IJSRuntime JsRuntime
 <style>
-    img.cardGrid
-    {
+    img.cardGrid {
         max-width: 100%;
         height: auto;
         max-height: 100%;
     }
 
     img.dimmed {
-        filter:brightness(25%)
+        filter: brightness(25%)
     }
 </style>
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
-@for (int i = 0; i < 9; i++)
-{
-
-}
+<table>
+    <tr>
+        @for (int i = 0; i < maxHandSize; i++)
+        {
+            int n = i;
+            <td>
+                <img class="cardGrid" src=@("/IdolIcons/"+ (int)(hand.Count>i?hand.ElementAt(n):0)+".png")
+                     @onclick="()=>RemoveFromHand(n)" />
+            </td>
+        }
+    </tr>
+</table>
 Welcome to your new app.
 <hr>
 <table style=" width:100%">
@@ -31,8 +39,8 @@ Welcome to your new app.
                 if (n < totalCards)
                 {
                     <td>
-                        <img class="cardGrid @(available[(IdolEnum)n]?"normal":"dimmed")" src=@("/IdolIcons/"+(n+1)+".png")
-                        @oncontextmenu="()=>ToggleAvailable(n)" @oncontextmenu:preventDefault="true"/>
+                        <img class="cardGrid @(available[(IdolEnum)n+1]?"normal":"dimmed")" src=@("/IdolIcons/"+(n+1)+".png")
+                             @oncontextmenu="()=>ToggleAvailable(n+1)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand(n+1)" />
                     </td>
                 }
             }
@@ -56,5 +64,26 @@ Welcome to your new app.
     {
         available[(IdolEnum)n] = !available[(IdolEnum)n];
         StateHasChanged();
+    }
+    private void AddToHand(int n)
+    {
+        if (hand.Count >= maxHandSize)
+        {
+            JsRuntime.InvokeVoidAsync("alert", "Hand is Full");
+            return;
+        }
+        else
+        {
+            if (available[(IdolEnum)n])
+            {
+                hand.Add((CardEnum)n);
+                StateHasChanged();
+            }
+        }
+    }
+    private void RemoveFromHand(int n)
+    {
+        if (hand.Count > n)
+            hand.RemoveAt(n);
     }
 }
