@@ -12,6 +12,10 @@
     img.dimmed {
         filter: brightness(25%)
     }
+
+    img.unseen {
+        filter: opacity(0.4)
+    }
 </style>
 <PageTitle>Home</PageTitle>
 
@@ -36,8 +40,8 @@ Welcome to your new app.
         <tr>
             @for (int j = 0; j < perRow; j++)
             {
-                int n = i * perRow + j+1;
-                if (n < totalCards)
+                int n = i * perRow + j + 1;
+                if (n <= totalCards)
                 {
                     <td>
                         <img class="cardGrid @(available[(CardEnum)n]?"normal":"dimmed")" src=@("/IdolIcons/"+(n)+".png")
@@ -48,34 +52,44 @@ Welcome to your new app.
         </tr>
     }
 </table>
-<table>
-@foreach(var a in GlobalDatas.BaseUnitData)
+@foreach (var groups in potentialUnits.GroupBy(x=>x.TotalCount).OrderByDescending(x=>x.Key))
 {
-    <tr>
-        <td>@a?.Name</td>
-        @foreach (var b in a?.Idols??new List<CardEnum>())
-        {
-        <td>@b</td>
-        }
-    </tr>
-}
+    <br />
+<table>
+        @foreach (var a in groups.OrderBy(x => x.Gone).ThenByDescending(x => x.Have))
+    {
+        <tr>
+            <td>@a?.Name <br /> @a?.Have / @a?.TotalCount</td>
+            @foreach (var b in a?.Idols ?? new List<CardEnum>())
+            {
+                <td>
+                    <img class="cardGrid @(hand.Any(x=>x==b)?"normal" : available[b]? "unseen" : "dimmed" )" src=@("/IdolIcons/"+ (int)(b)+".png") />
+                </td>
+            }
+        </tr>
+    }
 </table>
+}
 @code {
     List<CardEnum> hand = new List<CardEnum>();
     private int maxHandSize = 9;
     private int totalCards = 52;
     private int perRow = 13;
     private Dictionary<CardEnum, bool> available = new Dictionary<CardEnum, bool>();
+    private List<UnitEvaluator> potentialUnits = new List<UnitEvaluator>();
     protected override async Task OnInitializedAsync()
     {
         foreach (CardEnum a in Enum.GetValues(typeof(CardEnum)))
         {
             available[a] = true;
         }
+        GlobalDatas.BaseUnitData.ForEach(x => potentialUnits.Add(new UnitEvaluator(x)));
     }
     private void ToggleAvailable(int n)
     {
         available[(CardEnum)n] = !available[(CardEnum)n];
+        hand.RemoveAll(x => x == (CardEnum)n);
+        EvaluateHand();
         StateHasChanged();
     }
     private void AddToHand(int n)
@@ -90,6 +104,7 @@ Welcome to your new app.
             if (available[(CardEnum)n])
             {
                 hand.Add((CardEnum)n);
+                EvaluateHand();
                 StateHasChanged();
             }
         }
@@ -97,6 +112,19 @@ Welcome to your new app.
     private void RemoveFromHand(int n)
     {
         if (hand.Count > n)
+        {
             hand.RemoveAt(n);
+            EvaluateHand();
+        }
+    }
+    private void EvaluateHand()
+    {
+        potentialUnits.ForEach(x =>
+        {
+            var ownedCards = hand.Intersect(x.Idols).ToList();
+            x.Have = ownedCards.Count;
+            ownedCards.ForEach(y => x.TypeHave[y.Type()]++);
+            x.Gone = x.Idols.Count(y => available[y] == false);
+        });
     }
 }
