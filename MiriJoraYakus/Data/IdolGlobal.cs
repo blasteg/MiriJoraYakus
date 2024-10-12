@@ -1,0 +1,62 @@
+﻿using MiriJoraYakus.Enums;
+namespace MiriJoraYakus.Data
+{
+    public static partial class GlobalDatas
+    {
+        public static List<IdolData> BaseIdolData = new List<IdolData>
+        {
+new IdolData{ Idol=CardEnum.天海春香, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.如月千早, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.星井美希, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.萩原雪歩, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.高槻やよい, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.菊地真, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.水瀬伊織, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.四条貴音, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.秋月律子, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.三浦あずさ, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.双海亜美, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.双海真美, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.我那覇響, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.春日未来, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.最上静香, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.伊吹翼, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.田中琴葉, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.島原エレナ, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.佐竹美奈子, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.所恵美, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.徳川まつり, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.箱崎星梨花, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.野々原茜, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.望月杏奈, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.ロコ, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.七尾百合子, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.高山紗代子, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.松田亜利沙, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.高坂海美, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.中谷育, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.天空橋朋花, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.エミリー, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.北沢志保, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.舞浜歩, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.木下ひなた, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.矢吹可奈, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.横山奈緒, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.二階堂千鶴, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.馬場このみ, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.大神環, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.豊川風花, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.宮尾美也, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.福田のり子, Type=TypeEnum.Princess},
+new IdolData{ Idol=CardEnum.真壁瑞希, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.篠宮可憐, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.百瀬莉緒, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.永吉昴, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.北上麗花, Type=TypeEnum.Angel},
+new IdolData{ Idol=CardEnum.周防桃子, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.ジュリア, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.白石紬, Type=TypeEnum.Fairy},
+new IdolData{ Idol=CardEnum.桜守歌織, Type=TypeEnum.Angel}
+        };
+    }
+}

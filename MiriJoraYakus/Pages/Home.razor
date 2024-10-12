@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using MiriJoraYakus.Enums
+@using MiriJoraYakus.Data
 @inject IJSRuntime JsRuntime
 <style>
     img.cardGrid {
@@ -35,34 +36,46 @@ Welcome to your new app.
         <tr>
             @for (int j = 0; j < perRow; j++)
             {
-                int n = i * perRow + j;
+                int n = i * perRow + j+1;
                 if (n < totalCards)
                 {
                     <td>
-                        <img class="cardGrid @(available[(IdolEnum)n+1]?"normal":"dimmed")" src=@("/IdolIcons/"+(n+1)+".png")
-                             @oncontextmenu="()=>ToggleAvailable(n+1)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand(n+1)" />
+                        <img class="cardGrid @(available[(CardEnum)n]?"normal":"dimmed")" src=@("/IdolIcons/"+(n)+".png")
+                             @oncontextmenu="()=>ToggleAvailable(n)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand(n)" />
                     </td>
                 }
             }
         </tr>
     }
 </table>
+<table>
+@foreach(var a in GlobalDatas.BaseUnitData)
+{
+    <tr>
+        <td>@a?.Name</td>
+        @foreach (var b in a?.Idols??new List<CardEnum>())
+        {
+        <td>@b</td>
+        }
+    </tr>
+}
+</table>
 @code {
     List<CardEnum> hand = new List<CardEnum>();
     private int maxHandSize = 9;
     private int totalCards = 52;
     private int perRow = 13;
-    private Dictionary<IdolEnum, bool> available = new Dictionary<IdolEnum, bool>();
+    private Dictionary<CardEnum, bool> available = new Dictionary<CardEnum, bool>();
     protected override async Task OnInitializedAsync()
     {
-        foreach (IdolEnum a in Enum.GetValues(typeof(IdolEnum)))
+        foreach (CardEnum a in Enum.GetValues(typeof(CardEnum)))
         {
             available[a] = true;
         }
     }
     private void ToggleAvailable(int n)
     {
-        available[(IdolEnum)n] = !available[(IdolEnum)n];
+        available[(CardEnum)n] = !available[(CardEnum)n];
         StateHasChanged();
     }
     private void AddToHand(int n)
@@ -74,7 +87,7 @@ Welcome to your new app.
         }
         else
         {
-            if (available[(IdolEnum)n])
+            if (available[(CardEnum)n])
             {
                 hand.Add((CardEnum)n);
                 StateHasChanged();

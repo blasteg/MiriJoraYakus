@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using MiriJoraYakus.Data;
+using System.Runtime.Serialization;
 
 namespace MiriJoraYakus.Enums
 {
@@ -57,5 +58,12 @@ namespace MiriJoraYakus.Enums
         ジュリア,
         白石紬,
         桜守歌織
+    }
+    public static class Ext
+    {
+        public static TypeEnum Type(this CardEnum card)
+        {
+            return GlobalDatas.BaseIdolData.First(x => x.Idol == card).Type;
+        }
     }
 }
