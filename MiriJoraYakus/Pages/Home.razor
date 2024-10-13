@@ -17,8 +17,12 @@
         filter: opacity(0.4)
     }
 
-    table.hidingUnits {
+    div.hidingUnits {
         display: none
+    }
+
+    td.UnitGrids {
+        height: 80px
     }
 </style>
 <PageTitle>Home</PageTitle>
@@ -64,20 +68,22 @@ Welcome to your new app.
     }
     <hr />
     <h3>@groups.Key Card Units <a @onclick="()=>ToggleExpand(groups.Key)">@(unitExpanded[groups.Key] ? "⮟" : "⮞")</a></h3>
-    <table class="@(unitExpanded[groups.Key]?"showingUnits":"hidingUnits")">
-        @foreach (var a in groups.OrderBy(x => x.Gone).ThenByDescending(x => x.Have))
-        {
-            <tr style="outline: solid thin;">
-                <td>@a?.Name <br /> @a?.Have / @a?.TotalCount</td>
-                @foreach (var b in a?.Idols ?? new List<CardEnum>())
-                {
-                    <td>
-                        <img class="cardGrid @(hand.Any(x=>x==b)?"normal" : available[b]? "unseen" : "dimmed" )" src=@("/IdolIcons/"+ (int)(b)+".png") />
-                    </td>
-                }
-            </tr>
-        }
-    </table>
+    <div class="@(unitExpanded[groups.Key]?"showingUnits":"hidingUnits")" style="overflow-y:scroll; height:400px; width:90%">
+        <table>
+            @foreach (var a in groups.OrderBy(x => x.Gone).ThenByDescending(x => x.Have))
+            {
+                <tr style="outline: solid thin; height:80px">
+                    <td>@a?.Name <br /> @a?.Have / @a?.TotalCount</td>
+                    @foreach (var b in a?.Idols ?? new List<CardEnum>())
+                    {
+                        <td class="UnitGrids">
+                            <img class="cardGrid @(hand.Any(x=>x==b)?"normal" : available[b]? "unseen" : "dimmed" )" src=@("/IdolIcons/"+ (int)(b)+".png") />
+                        </td>
+                    }
+                </tr>
+            }
+        </table>
+    </div>
 }
 @code {
     List<CardEnum> hand = new List<CardEnum>();
