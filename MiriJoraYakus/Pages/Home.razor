@@ -16,6 +16,11 @@
     img.unseen {
         filter: opacity(0.4)
     }
+
+    table.hidingUnits
+    {
+        display:none
+    }
 </style>
 <PageTitle>Home</PageTitle>
 
@@ -54,8 +59,13 @@ Welcome to your new app.
 </table>
 @foreach (var groups in potentialUnits.GroupBy(x=>x.TotalCount).OrderByDescending(x=>x.Key))
 {
-    <br />
-<table>
+    if (unitExpanded.ContainsKey(groups.Key)==false)
+    {
+        unitExpanded.Add(groups.Key, true);
+    }
+    <hr />
+    <h3>@groups.Key Card Units <a @onclick="()=>ToggleExpand(groups.Key)">@(unitExpanded[groups.Key] ? "⮟" : "⮞")</a></h3>
+    <table class="@(unitExpanded[groups.Key]?"showingUnits":"hidingUnits")">
         @foreach (var a in groups.OrderBy(x => x.Gone).ThenByDescending(x => x.Have))
     {
         <tr>
@@ -77,6 +87,7 @@ Welcome to your new app.
     private int perRow = 13;
     private Dictionary<CardEnum, bool> available = new Dictionary<CardEnum, bool>();
     private List<UnitEvaluator> potentialUnits = new List<UnitEvaluator>();
+    private Dictionary<int, bool> unitExpanded = new Dictionary<int, bool>();
     protected override async Task OnInitializedAsync()
     {
         foreach (CardEnum a in Enum.GetValues(typeof(CardEnum)))
@@ -126,5 +137,13 @@ Welcome to your new app.
             ownedCards.ForEach(y => x.TypeHave[y.Type()]++);
             x.Gone = x.Idols.Count(y => available[y] == false);
         });
+    }
+    private void ToggleExpand(int n)
+    {
+        if (unitExpanded.ContainsKey(n))
+        {
+            unitExpanded[n] = !unitExpanded[n];
+            StateHasChanged();
+        }
     }
 }
