@@ -420,6 +420,108 @@ namespace MiriJoraYakus.Data
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.双海亜美, CardEnum.双海真美, CardEnum.春日未来, CardEnum.最上静香, CardEnum.所恵美, CardEnum.野々原茜, CardEnum.中谷育, CardEnum.エミリー, CardEnum.豊川風花, CardEnum.篠宮可憐, CardEnum.百瀬莉緒, CardEnum.桜守歌織 }
                  ,"FantasticLight","MTS"),
             #endregion
+            #region ASTROLOGIA
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.星井美希, CardEnum.高槻やよい, CardEnum.秋月律子, CardEnum.双海亜美, CardEnum.双海真美 }
+                 ,"ソル","ASTROLOGIA"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.如月千早, CardEnum.菊地真, CardEnum.三浦あずさ, CardEnum.我那覇響 }
+                 ,"ルナ","ASTROLOGIA"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.天海春香, CardEnum.萩原雪歩, CardEnum.水瀬伊織, CardEnum.四条貴音 }
+                 ,"ステラ","ASTROLOGIA"),
+            #endregion
+
+            #region MTV 
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.我那覇響, CardEnum.佐竹美奈子, CardEnum.中谷育, CardEnum.舞浜歩, CardEnum.篠宮可憐, }
+                 ,"ワールド・アスレチック・COOK-KING ～勝者必食！？スポ食の秋～","MTV"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.春日未来, CardEnum.所恵美, CardEnum.野々原茜, CardEnum.望月杏奈, CardEnum.高山紗代子 }
+                 ,"ショコラブル＊イブ","MTV"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.三浦あずさ, CardEnum.徳川まつり, CardEnum.大神環, CardEnum.福田のり子, CardEnum.白石紬 }
+                 ,"Vacation VS Summer ～ナツとヤスミのアンビバレント！～","MTV"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.双海真美, CardEnum.伊吹翼, CardEnum.天空橋朋花, CardEnum.矢吹可奈, CardEnum.北上麗花 }
+                 ,"ミスティック・セレモニーへの招待状","MTV"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.菊地真, CardEnum.最上静香, CardEnum.福田のり子, CardEnum.永吉昴 }
+                 ,"春風満帆スターティング","MTV"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.如月千早, CardEnum.徳川まつり, CardEnum.天空橋朋花, CardEnum.木下ひなた, CardEnum.馬場このみ }
+                 ,"リベレイシング／アロン -LiberaSing Along-","MTV"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.我那覇響, CardEnum.高坂海美, CardEnum.横山奈緒, CardEnum.宮尾美也, CardEnum.真壁瑞希 }
+                 ,"夢みがちBride","MTV"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.四条貴音, CardEnum.三浦あずさ, CardEnum.二階堂千鶴, CardEnum.豊川風花, CardEnum.北上麗花 }
+                 ,"カンパリーナ♡","MTV"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.水瀬伊織, CardEnum.高山紗代子, CardEnum.舞浜歩, CardEnum.百瀬莉緒, CardEnum.永吉昴 }
+                 ,"Dance in the Light","MTV"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.星井美希, CardEnum.高槻やよい, CardEnum.望月杏奈, CardEnum.木下ひなた, CardEnum.ジュリア }
+                 ,"はぴ！やば！まいまいんど！","MTV"),
+            #endregion
+            #region MCA 
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.四条貴音, CardEnum.中谷育, CardEnum.馬場このみ, CardEnum.真壁瑞希, CardEnum.周防桃子 }
+                 ,"解夏傀儡","MCA"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.箱崎星梨花, CardEnum.ロコ, CardEnum.舞浜歩, CardEnum.北上麗花 }
+                 ,"エンダーエンダー","MCA"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.春日未来, CardEnum.田中琴葉, CardEnum.七尾百合子, CardEnum.北沢志保, CardEnum.豊川風花 }
+                 ,"ミステイク・マーダー！","MCA"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.菊地真, CardEnum.水瀬伊織, CardEnum.最上静香, CardEnum.松田亜利沙, CardEnum.矢吹可奈 }
+                 ,"銀のテーブル木苺ジャム","MCA"),
+            #endregion
+            #region Comic 
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.真壁瑞希, CardEnum.ジュリア }
+                 ,"アイル ","Comic"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.最上静香, CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.北沢志保, CardEnum.北上麗花 }
+                 ,"Flooding","Comic"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.高坂海美, CardEnum.北沢志保, CardEnum.矢吹可奈 }
+                 ,"Clover","Comic"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.七尾百合子, CardEnum.馬場このみ, CardEnum.周防桃子 }
+                 ,"FleurS","Comic"),
+            #endregion
+            #region Anime
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.佐竹美奈子, CardEnum.望月杏奈, CardEnum.天空橋朋花, CardEnum.北沢志保 }
+                 ,"Team1st","Anime"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.高坂海美, CardEnum.福田のり子, CardEnum.真壁瑞希, CardEnum.篠宮可憐, CardEnum.百瀬莉緒 }
+                 ,"Team2nd","Anime"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.田中琴葉, CardEnum.所恵美, CardEnum.七尾百合子, CardEnum.大神環, CardEnum.豊川風花 }
+                 ,"Team3rd ","Anime"),
+            //new UnitData(
+            //     new List<CardEnum>{ CardEnum.ロコ, CardEnum.松田亜利沙, CardEnum.横山奈緒, CardEnum.二階堂千鶴, CardEnum.馬場このみ, CardEnum.周防桃子 }
+            //     ,"Team4th","Anime"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.高山紗代子, CardEnum.中谷育, CardEnum.宮尾美也 }
+                 ,"Team5th","Anime"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.島原エレナ, CardEnum.徳川まつり, CardEnum.エミリー, CardEnum.木下ひなた, CardEnum.永吉昴 }
+                 ,"Team6th","Anime"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.舞浜歩, CardEnum.矢吹可奈, CardEnum.北上麗花, CardEnum.ジュリア }
+                 ,"Team7th","Anime"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.伊吹翼, CardEnum.白石紬, CardEnum.桜守歌織 }
+                 ,"Team8th","Anime"),
+            #endregion
+
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
+                 ,"MILLION RADIO!","Other"),
         };
     }
 }
