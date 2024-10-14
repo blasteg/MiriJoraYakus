@@ -201,6 +201,9 @@
         potentialUnits.ForEach(x =>
         {
             var ownedCards = hand.Intersect(x.Idols).ToList();
+            x.TypeHave[TypeEnum.Princess] = 0;
+            x.TypeHave[TypeEnum.Fairy] = 0;
+            x.TypeHave[TypeEnum.Angel] = 0;
             ownedCards.ForEach(y => x.TypeHave[y.Type()]++);
             x.PrWC = int.Min(x.TypeCount[TypeEnum.Princess] - x.TypeHave[TypeEnum.Princess], hand.Count(y => y == CardEnum.PrWC));
             x.FaWC = int.Min(x.TypeCount[TypeEnum.Fairy] - x.TypeHave[TypeEnum.Fairy], hand.Count(y => y == CardEnum.FaWC));
