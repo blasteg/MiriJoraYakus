@@ -15,6 +15,10 @@ namespace MiriJoraYakus.Data
         public Dictionary<TypeEnum, int> TypeHave = new Dictionary<TypeEnum, int> { { TypeEnum.Princess, 0 }, { TypeEnum.Fairy, 0 }, { TypeEnum.Angel, 0 } };
         public int Have { get; set; } = 0;
         public int Gone { get; set; } = 0;
+        public int PrWC { get; set; } = 0;
+        public int FaWC { get; set; } = 0;
+        public int AnWC { get; set; } = 0;
+        public int AllWC { get; set; } = 0;
         public UnitEvaluator(UnitData data) 
         {
             Name = data.Name;

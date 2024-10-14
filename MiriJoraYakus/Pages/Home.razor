@@ -22,7 +22,11 @@
     }
 
     td.UnitGrids {
-        height: 80px
+        height: 75px
+    }
+
+    td.WCGrids {
+        height: 50px
     }
 </style>
 <PageTitle>ミリドンジャラの支援サイト</PageTitle>
@@ -63,6 +67,24 @@
                     }
                 </tr>
             }
+            <tr>
+                <td>
+                    <img class="cardGrid @(available[CardEnum.PrWC]?"normal":"dimmed")" src=@("/IdolIcons/53.png")
+                         @oncontextmenu="()=>ToggleAvailable((int)CardEnum.PrWC)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand((int)CardEnum.PrWC)" />
+                </td>
+                <td>
+                    <img class="cardGrid @(available[CardEnum.FaWC]?"normal":"dimmed")" src=@("/IdolIcons/54.png")
+                         @oncontextmenu="()=>ToggleAvailable((int)CardEnum.FaWC)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand((int)CardEnum.FaWC)" />
+                </td>
+                <td>
+                    <img class="cardGrid @(available[CardEnum.AnWC]?"normal":"dimmed")" src=@("/IdolIcons/55.png")
+                         @oncontextmenu="()=>ToggleAvailable((int)CardEnum.AnWC)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand((int)CardEnum.AnWC)" />
+                </td>
+                <td>
+                    <img class="cardGrid @(available[CardEnum.AllWC]?"normal":"dimmed")" src=@("/IdolIcons/56.png")
+                         @oncontextmenu="()=>ToggleAvailable((int)CardEnum.AllWC)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand((int)CardEnum.AllWC)" />
+                </td>
+            </tr>
         </table>
     </div>
     <div class="col-md-5">
@@ -78,8 +100,9 @@
                 <table>
                     @foreach (var a in groups.OrderBy(x => x.Gone).ThenByDescending(x => x.Have))
                     {
-                        <tr style="outline: solid thin; height:80px">
+                        <tr style="border-top: solid 2px; height:80px">
                             <td>@a?.Name <br /> @a?.Have / @a?.TotalCount</td>
+                            <td></td>
                             @foreach (var b in a?.Idols ?? new List<CardEnum>())
                             {
                                 <td class="UnitGrids">
@@ -87,6 +110,38 @@
                                 </td>
                             }
                         </tr>
+                        if (a?.PrWC+a?.AnWC+a?.FaWC+a?.AllWC>0)
+                        {
+                            //Display Wildcards
+                            <tr>
+                                <td></td>
+                                <td class="WCGrids">+</td>
+                                @for(int i=0;i<a?.PrWC;i++)
+                                {
+                                    <td class="WCGrids">
+                                        <img class="cardGrid normal" src=@("/IdolIcons/"+ (int)(CardEnum.PrWC)+".png") />
+                                    </td>
+                                }
+                                @for (int i = 0; i < a?.FaWC; i++)
+                                {
+                                    <td class="WCGrids">
+                                        <img class="cardGrid normal" src=@("/IdolIcons/"+ (int)(CardEnum.FaWC)+".png") />
+                                    </td>
+                                }
+                                @for (int i = 0; i < a?.AnWC; i++)
+                                {
+                                    <td class="WCGrids">
+                                        <img class="cardGrid normal" src=@("/IdolIcons/"+ (int)(CardEnum.AnWC)+".png") />
+                                    </td>
+                                }
+                                @for (int i = 0; i < a?.AllWC; i++)
+                                {
+                                    <td class="WCGrids">
+                                        <img class="cardGrid normal" src=@("/IdolIcons/"+ (int)(CardEnum.AllWC)+".png") />
+                                    </td>
+                                }
+                            </tr>
+                        }
                     }
                 </table>
             </div>
@@ -146,9 +201,15 @@
         potentialUnits.ForEach(x =>
         {
             var ownedCards = hand.Intersect(x.Idols).ToList();
-            x.Have = ownedCards.Count;
             ownedCards.ForEach(y => x.TypeHave[y.Type()]++);
-            x.Gone = x.Idols.Count(y => available[y] == false);
+            x.PrWC = int.Min(x.TypeCount[TypeEnum.Princess] - x.TypeHave[TypeEnum.Princess], hand.Count(y => y == CardEnum.PrWC));
+            x.FaWC = int.Min(x.TypeCount[TypeEnum.Fairy] - x.TypeHave[TypeEnum.Fairy], hand.Count(y => y == CardEnum.FaWC));
+            x.AnWC = int.Min(x.TypeCount[TypeEnum.Angel] - x.TypeHave[TypeEnum.Angel], hand.Count(y => y == CardEnum.AnWC));
+            x.Have = ownedCards.Count + x.PrWC + x.FaWC + x.AnWC;
+            x.Gone = x.Idols.Count(y => available[y] == false) - x.PrWC - x.FaWC - x.AnWC;
+            x.AllWC = int.Min(hand.Count(y => y == CardEnum.AllWC),x.TotalCount-x.Have);
+            x.Have = x.Have + x.AllWC;
+            x.Gone = x.Gone - x.AllWC;
         });
     }
     private void ToggleExpand(int n)

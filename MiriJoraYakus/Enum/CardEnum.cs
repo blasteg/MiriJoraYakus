@@ -57,7 +57,11 @@ namespace MiriJoraYakus.Enums
         周防桃子,
         ジュリア,
         白石紬,
-        桜守歌織
+        桜守歌織,
+        PrWC,
+        FaWC,
+        AnWC,
+        AllWC
     }
     public static class Ext
     {
