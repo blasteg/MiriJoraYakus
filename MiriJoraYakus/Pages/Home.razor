@@ -25,66 +25,74 @@
         height: 80px
     }
 </style>
-<PageTitle>Home</PageTitle>
-
-<h1>Hello, world!</h1>
-<table>
-    <tr>
-        @for (int i = 0; i < maxHandSize; i++)
-        {
-            int n = i;
-            <td>
-                <img class="cardGrid" src=@("/IdolIcons/"+ (int)(hand.Count>i?hand.ElementAt(n):0)+".png")
-                     @onclick="()=>RemoveFromHand(n)" />
-            </td>
-        }
-    </tr>
-</table>
-Welcome to your new app.
-<hr>
-<table style=" width:100%">
-    @for (int i = 0; i < totalCards / perRow; i++)
-    {
-        <tr>
-            @for (int j = 0; j < perRow; j++)
-            {
-                int n = i * perRow + j + 1;
-                if (n <= totalCards)
+<PageTitle>ミリドンジャラの支援サイト</PageTitle>
+<div class="row">
+    <div class="col-md-7">
+        <h3>手札 Hand</h3>
+        <table>
+            <tr>
+                @for (int i = 0; i < maxHandSize; i++)
                 {
+                    int n = i;
                     <td>
-                        <img class="cardGrid @(available[(CardEnum)n]?"normal":"dimmed")" src=@("/IdolIcons/"+(n)+".png")
-                             @oncontextmenu="()=>ToggleAvailable(n)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand(n)" />
+                        <img class="cardGrid" src=@("/IdolIcons/"+ (int)(hand.Count>i?hand.ElementAt(n):0)+".png")
+                             @onclick="()=>RemoveFromHand(n)" />
                     </td>
                 }
-            }
-        </tr>
-    }
-</table>
-@foreach (var groups in potentialUnits.GroupBy(x => x.TotalCount).OrderByDescending(x => x.Key))
-{
-    if (unitExpanded.ContainsKey(groups.Key) == false)
-    {
-        unitExpanded.Add(groups.Key, true);
-    }
-    <hr />
-    <h3>@groups.Key Card Units <a @onclick="()=>ToggleExpand(groups.Key)">@(unitExpanded[groups.Key] ? "⮟" : "⮞")</a></h3>
-    <div class="@(unitExpanded[groups.Key]?"showingUnits":"hidingUnits")" style="overflow-y:scroll; height:400px; width:90%">
-        <table>
-            @foreach (var a in groups.OrderBy(x => x.Gone).ThenByDescending(x => x.Have))
+            </tr>
+        </table>
+        (Click to Discard クリックは捨てる)
+        <hr>
+        Left Click: Add to Hand; Right Click: Toggle whether card is still available
+        <br />
+        左クリック:手札に加える; 右クリックで山か河に置く/戻す
+        <table style=" width:100%">
+            @for (int i = 0; i < totalCards / perRow; i++)
             {
-                <tr style="outline: solid thin; height:80px">
-                    <td>@a?.Name <br /> @a?.Have / @a?.TotalCount</td>
-                    @foreach (var b in a?.Idols ?? new List<CardEnum>())
+                <tr>
+                    @for (int j = 0; j < perRow; j++)
                     {
-                        <td class="UnitGrids">
-                            <img class="cardGrid @(hand.Any(x=>x==b)?"normal" : available[b]? "unseen" : "dimmed" )" src=@("/IdolIcons/"+ (int)(b)+".png") />
-                        </td>
+                        int n = i * perRow + j + 1;
+                        if (n <= totalCards)
+                        {
+                            <td>
+                                <img class="cardGrid @(available[(CardEnum)n]?"normal":"dimmed")" src=@("/IdolIcons/"+(n)+".png")
+                                     @oncontextmenu="()=>ToggleAvailable(n)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand(n)" />
+                            </td>
+                        }
                     }
                 </tr>
             }
         </table>
     </div>
-}
+    <div class="col-md-5">
+        @foreach (var groups in potentialUnits.GroupBy(x => x.TotalCount).OrderByDescending(x => x.Key))
+        {
+            if (unitExpanded.ContainsKey(groups.Key) == false)
+            {
+                unitExpanded.Add(groups.Key, true);
+            }
+            <hr />
+            <h3>@groups.Key Card Units <a @onclick="()=>ToggleExpand(groups.Key)">@(unitExpanded[groups.Key] ? "⮟" : "⮞")</a></h3>
+            <div class="@(unitExpanded[groups.Key]?"showingUnits":"hidingUnits")" style="overflow-y:scroll; height:400px; width:95%">
+                <table>
+                    @foreach (var a in groups.OrderBy(x => x.Gone).ThenByDescending(x => x.Have))
+                    {
+                        <tr style="outline: solid thin; height:80px">
+                            <td>@a?.Name <br /> @a?.Have / @a?.TotalCount</td>
+                            @foreach (var b in a?.Idols ?? new List<CardEnum>())
+                            {
+                                <td class="UnitGrids">
+                                    <img class="cardGrid @(hand.Any(x=>x==b)?"normal" : available[b]? "unseen" : "dimmed" )" src=@("/IdolIcons/"+ (int)(b)+".png") />
+                                </td>
+                            }
+                        </tr>
+                    }
+                </table>
+            </div>
+        }
+    </div>
+</div>
 @code {
     List<CardEnum> hand = new List<CardEnum>();
     private int maxHandSize = 9;
