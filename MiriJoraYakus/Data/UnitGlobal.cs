@@ -19,464 +19,464 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{CardEnum.伊吹翼, CardEnum.島原エレナ, CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.望月杏奈, CardEnum.木下ひなた, CardEnum.馬場このみ, CardEnum.大神環, CardEnum.豊川風花, CardEnum.宮尾美也, CardEnum.篠宮可憐, CardEnum.北上麗花, CardEnum.桜守歌織 }
                  ,"Angel Stars","Generic"),
-            #region LTP
+            #region LIVE THE@TER PERFORMANCE
             new UnitData(
                  new List<CardEnum>{ CardEnum.天海春香, CardEnum.最上静香, CardEnum.箱崎星梨花, CardEnum.七尾百合子, CardEnum.天空橋朋花 }
-                 ,"Legend Girls!!","LTP"),
+                 ,"Legend Girls!!","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.我那覇響, CardEnum.春日未来, CardEnum.望月杏奈, CardEnum.横山奈緒, CardEnum.豊川風花 }
-                 ,"PRETTY DREAMER","LTP"),
+                 ,"PRETTY DREAMER","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.田中琴葉, CardEnum.所恵美, CardEnum.北沢志保, }
-                 ,"Blue Symphony","LTP"),
+                 ,"Blue Symphony","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.水瀬伊織, CardEnum.エミリー, CardEnum.真壁瑞希, CardEnum.百瀬莉緒 }
-                 ,"Sentimental Venus","LTP"),
+                 ,"Sentimental Venus","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.伊吹翼, CardEnum.北上麗花, CardEnum.ジュリア }
-                 ,"Marionetteは眠らない","LTP"),
+                 ,"Marionetteは眠らない","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.三浦あずさ, CardEnum.高山紗代子, CardEnum.福田のり子, CardEnum.篠宮可憐 }
-                 ,"カワラナイモノ","LTP"),
+                 ,"カワラナイモノ","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.高槻やよい, CardEnum.中谷育, CardEnum.矢吹可奈, CardEnum.大神環 }
-                 ,"Good-Sleep, Baby♡","LTP"),
+                 ,"Good-Sleep, Baby♡","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.秋月律子, CardEnum.佐竹美奈子, CardEnum.松田亜利沙, CardEnum.木下ひなた }
-                 ,"Helloコンチェルト ","LTP"),
+                 ,"Helloコンチェルト ","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.徳川まつり, CardEnum.高坂海美, CardEnum.宮尾美也 }
-                 ,"瞳の中のシリウス ","LTP"),
+                 ,"瞳の中のシリウス ","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.菊地真, CardEnum.双海真美, CardEnum.島原エレナ, CardEnum.舞浜歩 }
-                 ,"Fu-Wa-Du-Wa","LTP"),
+                 ,"Fu-Wa-Du-Wa","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.ロコ, CardEnum.二階堂千鶴, CardEnum.周防桃子 }
-                 ,"ココロがかえる場所","LTP"),
+                 ,"ココロがかえる場所","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.双海亜美, CardEnum.野々原茜, CardEnum.馬場このみ, CardEnum.永吉昴 }
-                 ,"Bigバルーン◎","LTP"),
+                 ,"Bigバルーン◎","LIVE THE@TER PERFORMANCE"),
             #endregion
-            #region LTH
+            #region LIVE THE@TER HARMONY
             new UnitData(
                  new List<CardEnum>{ CardEnum.高槻やよい, CardEnum.水瀬伊織, CardEnum.秋月律子, CardEnum.双海亜美, CardEnum.我那覇響 }
-                 ,"合言葉はスタートアップ！","LTH"),
+                 ,"合言葉はスタートアップ！","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.伊吹翼, CardEnum.望月杏奈, CardEnum.七尾百合子, CardEnum.真壁瑞希 }
-                 ,"Growing Storm!","LTH"),
+                 ,"Growing Storm!","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.北沢志保, CardEnum.北上麗花 }
-                 ,"Shooting Stars","LTH"),
+                 ,"Shooting Stars","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.徳川まつり, CardEnum.エミリー, CardEnum.豊川風花, CardEnum.ジュリア }
-                 ,"Eternal Harmony","LTH"),
+                 ,"Eternal Harmony","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天海春香, CardEnum.松田亜利沙, CardEnum.横山奈緒, CardEnum.福田のり子, CardEnum.周防桃子 }
-                 ,"HOME, SWEET FRIENDSHIP","LTH"),
+                 ,"HOME, SWEET FRIENDSHIP","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.田中琴葉, CardEnum.所恵美, CardEnum.高坂海美, CardEnum.大神環, CardEnum.宮尾美也 }
-                 ,"ジレるハートに火をつけて","LTH"),
+                 ,"ジレるハートに火をつけて","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.菊地真, CardEnum.三浦あずさ, CardEnum.舞浜歩, CardEnum.矢吹可奈 }
-                 ,"Birth of Color","LTH"),
+                 ,"Birth of Color","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.双海真美, CardEnum.佐竹美奈子, CardEnum.中谷育, CardEnum.木下ひなた, CardEnum.馬場このみ }
-                 ,"ドリームトラベラー","LTH"),
+                 ,"ドリームトラベラー","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.高山紗代子, CardEnum.天空橋朋花, CardEnum.二階堂千鶴, CardEnum.永吉昴 }
-                 ,"星屑のシンフォニア","LTH"),
+                 ,"星屑のシンフォニア","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.島原エレナ, CardEnum.ロコ, CardEnum.篠宮可憐, CardEnum.百瀬莉緒 }
-                 ,"STANDING ALIVE","LTH"),
+                 ,"STANDING ALIVE","LIVE THE@TER HARMONY"),
             #endregion
-            #region LTD
+            #region LIVE THE@TER DREAMERS
             new UnitData(
                  new List<CardEnum>{CardEnum.天海春香, CardEnum.春日未来 }
-                 ,"ハルカナミライ","LTD"),
+                 ,"ハルカナミライ","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.望月杏奈, CardEnum.七尾百合子 }
-                 ,"成長Chu→LOVER!!","LTD"),
+                 ,"成長Chu→LOVER!!","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.所恵美, CardEnum.ジュリア }
-                 ,"エスケープ","LTD"),
+                 ,"エスケープ","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.高槻やよい, CardEnum.矢吹可奈 }
-                 ,"Eternal Spiral","LTD"),
+                 ,"Eternal Spiral","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.北沢志保, CardEnum.北上麗花 }
-                 ,"piece of cake","LTD"),
+                 ,"piece of cake","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.最上静香 }
-                 ,"アライブファクター","LTD"),
+                 ,"アライブファクター","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.二階堂千鶴 }
-                 ,"Persona Voice","LTD"),
+                 ,"Persona Voice","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.真壁瑞希, CardEnum.二階堂千鶴 }
-                 ,"Cut. Cut. Cut.","LTD"),
+                 ,"Cut. Cut. Cut.","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.宮尾美也 }
-                 ,"Smiling Crescent","LTD"),
+                 ,"Smiling Crescent","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.徳川まつり, CardEnum.馬場このみ }
-                 ,"Decided","LTD"),
+                 ,"Decided","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.我那覇響, CardEnum.伊吹翼 }
-                 ,"深層マーメイド","LTD"),
+                 ,"深層マーメイド","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{CardEnum.中谷育, CardEnum.天空橋朋花 }
-                 ,"HELLO, YOUR ANGEL♪","LTD"),
+                 ,"HELLO, YOUR ANGEL♪","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.秋月律子, CardEnum.篠宮可憐 }
-                 ,"G♡F","LTD"),
+                 ,"G♡F","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.水瀬伊織, CardEnum.エミリー }
-                 ,"little trip around the world","LTD"),
+                 ,"little trip around the world","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.佐竹美奈子, CardEnum.高山紗代子 }
-                 ,"Melody in scape","LTD"),
+                 ,"Melody in scape","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.双海亜美, CardEnum.木下ひなた}
-                 ,"”Your” HOME TOWN","LTD"),
+                 ,"”Your” HOME TOWN","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.野々原茜, CardEnum.ロコ }
-                 ,"fruity love","LTD"),
+                 ,"fruity love","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.松田亜利沙, CardEnum.横山奈緒 }
-                 ,"夜に輝く星座のように","LTD"),
+                 ,"夜に輝く星座のように","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.百瀬莉緒 }
-                 ,"秘密のメモリーズ","LTD"),
+                 ,"秘密のメモリーズ","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.三浦あずさ, CardEnum.豊川風花 }
-                 ,"たしかな足跡","LTD"),
+                 ,"たしかな足跡","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.田中琴葉, CardEnum.高坂海美 }
-                 ,"Understand? Understand!","LTD"),
+                 ,"Understand? Understand!","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.双海真美, CardEnum.大神環 }
-                 ,"ジャングル☆パーティー","LTD"),
+                 ,"ジャングル☆パーティー","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.菊地真, CardEnum.舞浜歩 }
-                 ,"Beat the World!!","LTD"),
+                 ,"Beat the World!!","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.島原エレナ }
-                 ,"Emergence Vibe","LTD"),
+                 ,"Emergence Vibe","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.福田のり子, CardEnum.永吉昴}
-                 ,"Dreamscape","LTD"),
+                 ,"Dreamscape","LIVE THE@TER DREAMERS"),
             #endregion
-            #region TA
+            #region THE@TER ACTIVITIES
             new UnitData(
                  new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.ロコ, CardEnum.七尾百合子, CardEnum.松田亜利沙, CardEnum.天空橋朋花 }
-                 ,"創造は始まりの風を連れて","TA"),
+                 ,"創造は始まりの風を連れて","THE@TER ACTIVITIES"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.木下ひなた, CardEnum.大神環, CardEnum.福田のり子, CardEnum.周防桃子, CardEnum.ジュリア }
-                 ,"俠気乱舞","TA"),
+                 ,"俠気乱舞","THE@TER ACTIVITIES"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.佐竹美奈子, CardEnum.矢吹可奈, CardEnum.真壁瑞希, CardEnum.篠宮可憐, CardEnum.北上麗花 }
-                 ,"赤い世界が消える頃","TA"),
+                 ,"赤い世界が消える頃","THE@TER ACTIVITIES"),
             #endregion
-            #region LTF
+            #region LIVE THE@TER FORWARD
             new UnitData(
                  new List<CardEnum>{ CardEnum.エミリー, CardEnum.木下ひなた, CardEnum.横山奈緒 }
-                 ,"キャンサー","LTF"),
+                 ,"キャンサー","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.島原エレナ, CardEnum.ロコ, CardEnum.中谷育 }
-                 ,"レオ","LTF"),
+                 ,"レオ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.佐竹美奈子, CardEnum.福田のり子 }
-                 ,"リブラ","LTF"),
+                 ,"リブラ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.望月杏奈, CardEnum.矢吹可奈, CardEnum.百瀬莉緒 }
-                 ,"カプリコーン","LTF"),
+                 ,"カプリコーン","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.エミリー, CardEnum.木下ひなた, CardEnum.横山奈緒, CardEnum.島原エレナ, CardEnum.ロコ, CardEnum.中谷育, CardEnum.伊吹翼, CardEnum.佐竹美奈子, CardEnum.福田のり子, CardEnum.望月杏奈, CardEnum.矢吹可奈, CardEnum.百瀬莉緒, CardEnum.桜守歌織 }
-                 ,"Sunshine Rhythm","LTF"),
+                 ,"Sunshine Rhythm","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.所恵美, CardEnum.舞浜歩, CardEnum.真壁瑞希 }
-                 ,"サジタリアス ","LTF"),
+                 ,"サジタリアス ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天空橋朋花, CardEnum.二階堂千鶴, CardEnum.篠宮可憐 }
-                 ,"ピスケス ","LTF"),
+                 ,"ピスケス ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.七尾百合子, CardEnum.永吉昴 }
-                 ,"ウィルゴ ","LTF"),
+                 ,"ウィルゴ ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.高山紗代子, CardEnum.北上麗花, CardEnum.ジュリア }
-                 ,"アクアリウス ","LTF"),
+                 ,"アクアリウス ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.所恵美, CardEnum.舞浜歩, CardEnum.真壁瑞希, CardEnum.天空橋朋花, CardEnum.二階堂千鶴, CardEnum.篠宮可憐, CardEnum.最上静香, CardEnum.七尾百合子, CardEnum.永吉昴, CardEnum.高山紗代子, CardEnum.北上麗花, CardEnum.ジュリア, CardEnum.白石紬 }
-                 ,"BlueMoon Harmony","LTF"),
+                 ,"BlueMoon Harmony","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.田中琴葉, CardEnum.松田亜利沙, CardEnum.高坂海美, CardEnum.北沢志保 }
-                 ,"スコーピオ","LTF"),
+                 ,"スコーピオ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.大神環 }
-                 ,"アリエス ","LTF"),
+                 ,"アリエス ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.徳川まつり, CardEnum.宮尾美也 }
-                 ,"タウラス ","LTF"),
+                 ,"タウラス ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.馬場このみ, CardEnum.豊川風花, CardEnum.周防桃子 }
-                 ,"ジェミニ ","LTF"),
+                 ,"ジェミニ ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.松田亜利沙, CardEnum.高坂海美, CardEnum.北沢志保, CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.大神環, CardEnum.春日未来, CardEnum.徳川まつり, CardEnum.宮尾美也, CardEnum.馬場このみ, CardEnum.豊川風花, CardEnum.周防桃子, CardEnum.田中琴葉}
-                 ,"Starlight Melody","LTF"),
+                 ,"Starlight Melody","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.白石紬, CardEnum.桜守歌織 }
-                 ,"オフィウクス","LTF"),
+                 ,"オフィウクス","LIVE THE@TER FORWARD"),
             #endregion
-            #region MTG
+            #region MILLION THE@TER GENERATION
             new UnitData(
                  new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.高坂海美 }
-                 ,"マイティーセーラーズ","MTG"),
+                 ,"マイティーセーラーズ","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.所恵美, CardEnum.天空橋朋花, CardEnum.二階堂千鶴, CardEnum.百瀬莉緒 }
-                 ,"夜想令嬢","MTG"),
+                 ,"夜想令嬢","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.島原エレナ, CardEnum.宮尾美也 }
-                 ,"Cleasky","MTG"),
+                 ,"Cleasky","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.七尾百合子, CardEnum.松田亜利沙, CardEnum.中谷育 }
-                 ,"トゥインクルリズム","MTG"),
+                 ,"トゥインクルリズム","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.北沢志保, CardEnum.真壁瑞希, CardEnum.白石紬 }
-                 ,"EScape","MTG"),
+                 ,"EScape","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.馬場このみ, CardEnum.豊川風花, CardEnum.北上麗花, CardEnum.桜守歌織 }
-                 ,"4 Luxury","MTG"),
+                 ,"4 Luxury","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.佐竹美奈子, CardEnum.高山紗代子, CardEnum.高坂海美, CardEnum.横山奈緒, CardEnum.福田のり子 }
-                 ,"閃光☆HANABI団","MTG"),
+                 ,"閃光☆HANABI団","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.ジュリア }
-                 ,"D/Zeal","MTG"),
+                 ,"D/Zeal","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.野々原茜, CardEnum.篠宮可憐 }
-                 ,"るきゃん ～3 little candy～","MTG"),
+                 ,"るきゃん ～3 little candy～","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.徳川まつり, CardEnum.エミリー }
-                 ,"Charlotte・Charlotte","MTG"),
+                 ,"Charlotte・Charlotte","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.ロコ, CardEnum.舞浜歩, CardEnum.永吉昴, CardEnum.周防桃子 }
-                 ,"Jelly PoP Beans","MTG"),
+                 ,"Jelly PoP Beans","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.望月杏奈, CardEnum.木下ひなた, CardEnum.大神環 }
-                 ,"ピコピコプラネッツ","MTG"),
+                 ,"ピコピコプラネッツ","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.田中琴葉, CardEnum.矢吹可奈 }
-                 ,"STAR ELEMENTS","MTG"),
+                 ,"STAR ELEMENTS","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.所恵美, CardEnum.北沢志保, CardEnum.ジュリア, CardEnum.白石紬 }
-                 ,"FairyTaleじゃいられない","MTG"),
+                 ,"FairyTaleじゃいられない","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.箱崎星梨花, CardEnum.望月杏奈, CardEnum.北上麗花, CardEnum.桜守歌織 }
-                 ,"Angelic Parade♪","MTG"),
+                 ,"Angelic Parade♪","MILLION THE@TER GENERATION"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.徳川まつり, CardEnum.七尾百合子, CardEnum.エミリー, CardEnum.矢吹可奈 }
-                 ,"Princess Be Ambitious!!","MTG"),
+                 ,"Princess Be Ambitious!!","MILLION THE@TER GENERATION"),
             #endregion
-            #region TB 
+            #region THE@TER BOOST 
             new UnitData(
                  new List<CardEnum>{ CardEnum.所恵美, CardEnum.高山紗代子, CardEnum.高坂海美, CardEnum.横山奈緒, CardEnum.豊川風花 }
-                 ,"ビッグバンズバリボー!!!!!","TB"),
+                 ,"ビッグバンズバリボー!!!!!","THE@TER BOOST"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.望月杏奈, CardEnum.宮尾美也, CardEnum.百瀬莉緒, CardEnum.桜守歌織 }
-                 ,"オーディナリィ・クローバー","TB"),
+                 ,"オーディナリィ・クローバー","THE@TER BOOST"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.田中琴葉, CardEnum.馬場このみ, CardEnum.真壁瑞希, CardEnum.周防桃子, CardEnum.白石紬 }
-                 ,"ラスト・アクトレス","TB"),
+                 ,"ラスト・アクトレス","THE@TER BOOST"),
             #endregion
-            #region MTW 
+            #region MILLION THE@TER WAVE 
             new UnitData(
                  new List<CardEnum>{ CardEnum.菊地真, CardEnum.野々原茜, CardEnum.ジュリア, CardEnum.白石紬, CardEnum.桜守歌織 }
-                 ,"ジェネシス×ネメシス","MTW"),
+                 ,"ジェネシス×ネメシス","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.二階堂千鶴, CardEnum.馬場このみ, CardEnum.豊川風花, CardEnum.百瀬莉緒, CardEnum.桜守歌織 }
-                 ,"White Vows","MTW"),
+                 ,"White Vows","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.望月杏奈, CardEnum.ロコ, CardEnum.七尾百合子, CardEnum.真壁瑞希, CardEnum.永吉昴 }
-                 ,"Chrono-Lexica","MTW"),
+                 ,"Chrono-Lexica","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.萩原雪歩, CardEnum.菊地真, CardEnum.水瀬伊織 }
-                 ,"Xs","MTW"),
+                 ,"Xs","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.馬場このみ, CardEnum.百瀬莉緒 }
-                 ,"Sherry 'n Cherry","MTW"),
+                 ,"Sherry 'n Cherry","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.四条貴音, CardEnum.三浦あずさ }
-                 ,"ARCANA","MTW"),
+                 ,"ARCANA","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天空橋朋花, CardEnum.エミリー, CardEnum.白石紬 }
-                 ,"花咲夜","MTW"),
+                 ,"花咲夜","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.佐竹美奈子, CardEnum.横山奈緒 }
-                 ,"Jus-2-Mint","MTW"),
+                 ,"Jus-2-Mint","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.島原エレナ, CardEnum.高坂海美, CardEnum.舞浜歩, CardEnum.福田のり子 }
-                 ,"miraclesonic★expassion","MTW"),
+                 ,"miraclesonic★expassion","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.木下ひなた, CardEnum.宮尾美也, CardEnum.篠宮可憐 }
-                 ,"Fleuranges","MTW"),
+                 ,"Fleuranges","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.七尾百合子, CardEnum.天空橋朋花, CardEnum.エミリー, CardEnum.永吉昴 }
-                 ,"Do the Idol!! ～断崖絶壁チュパカブラ～","MTW"),
+                 ,"Do the Idol!! ～断崖絶壁チュパカブラ～","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.田中琴葉, CardEnum.徳川まつり, CardEnum.北沢志保, CardEnum.桜守歌織 }
-                 ,"オペラセリア・煌輝座","MTW"),
+                 ,"オペラセリア・煌輝座","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天海春香, CardEnum.高槻やよい, CardEnum.我那覇響 }
-                 ,"ダイヤモンドダイバー◇","MTW"),
+                 ,"ダイヤモンドダイバー◇","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.中谷育, CardEnum.大神環, CardEnum.周防桃子 }
-                 ,"TIntMe!","MTW"),
+                 ,"TIntMe!","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.野々原茜, CardEnum.北上麗花 }
-                 ,"TRICK&TREAT","MTW"),
+                 ,"TRICK&TREAT","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.高山紗代子, CardEnum.二階堂千鶴, CardEnum.豊川風花, CardEnum.ジュリア }
-                 ,"chicAAmor","MTW"),
+                 ,"chicAAmor","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.所恵美, CardEnum.松田亜利沙, CardEnum.矢吹可奈 }
-                 ,"≡君彩≡","MTW"),
+                 ,"≡君彩≡","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.秋月律子, CardEnum.双海亜美, CardEnum.双海真美 }
-                 ,"ARMooo","MTW"),
+                 ,"ARMooo","MILLION THE@TER WAVE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.伊吹翼 }
-                 ,"ストロベリーポップムーン","MTW"),
+                 ,"ストロベリーポップムーン","MILLION THE@TER WAVE"),
             #endregion
-            #region TC 
+            #region THE@TER CHALLENGE 
             new UnitData(
                  new List<CardEnum>{ CardEnum.我那覇響, CardEnum.徳川まつり, CardEnum.箱崎星梨花, CardEnum.永吉昴, CardEnum.周防桃子 }
-                 ,"Girl meets Wonder","TC"),
+                 ,"Girl meets Wonder","THE@TER CHALLENGE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天海春香, CardEnum.如月千早, CardEnum.星井美希, CardEnum.菊地真, CardEnum.エミリー }
-                 ,"World Changer","TC"),
+                 ,"World Changer","THE@TER CHALLENGE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.島原エレナ, CardEnum.野々原茜, CardEnum.北沢志保, CardEnum.二階堂千鶴, CardEnum.桜守歌織 }
-                 ,"クルリウタ","TC"),
+                 ,"クルリウタ","THE@TER CHALLENGE"),
             #endregion
-            #region MTS 
+            #region MILLION THE@TER SEASON 
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.伊吹翼, CardEnum.所恵美, CardEnum.徳川まつり }
-                 ,"DIAMOND JOKER","MTS"),
+                 ,"DIAMOND JOKER","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.双海真美, CardEnum.田中琴葉, CardEnum.百瀬莉緒 }
-                 ,"真夏のダイヤ☆","MTS"),
+                 ,"真夏のダイヤ☆","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.水瀬伊織, CardEnum.春日未来, CardEnum.宮尾美也, CardEnum.周防桃子, CardEnum.桜守歌織 }
-                 ,"シークレットジュエル 〜魅惑の金剛石〜","MTS"),
+                 ,"シークレットジュエル 〜魅惑の金剛石〜","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.伊吹翼, CardEnum.所恵美, CardEnum.徳川まつり, CardEnum.萩原雪歩, CardEnum.双海真美, CardEnum.田中琴葉, CardEnum.百瀬莉緒, CardEnum.水瀬伊織, CardEnum.春日未来, CardEnum.宮尾美也, CardEnum.周防桃子, CardEnum.桜守歌織 }
-                 ,"BRIGHT DIAMOND","MTS"),
+                 ,"BRIGHT DIAMOND","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.三浦あずさ, CardEnum.箱崎星梨花, CardEnum.ロコ, CardEnum.高坂海美 }
-                 ,"産声とクラブ","MTS"),
+                 ,"産声とクラブ","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.菊地真, CardEnum.島原エレナ, CardEnum.二階堂千鶴, CardEnum.真壁瑞希 }
-                 ,"トレフル・ド・ノエル","MTS"),
+                 ,"トレフル・ド・ノエル","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.秋月律子, CardEnum.木下ひなた, CardEnum.横山奈緒, CardEnum.馬場このみ, CardEnum.大神環 }
-                 ,"Clover's Cry 〜神と神降ろしの少女〜","MTS"),
+                 ,"Clover's Cry 〜神と神降ろしの少女〜","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.三浦あずさ, CardEnum.箱崎星梨花, CardEnum.ロコ, CardEnum.高坂海美, CardEnum.菊地真, CardEnum.島原エレナ, CardEnum.二階堂千鶴, CardEnum.真壁瑞希, CardEnum.秋月律子, CardEnum.木下ひなた, CardEnum.横山奈緒, CardEnum.馬場このみ, CardEnum.大神環 }
-                 ,"CLEVER CLOVER","MTS"),
+                 ,"CLEVER CLOVER","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.高槻やよい, CardEnum.佐竹美奈子, CardEnum.七尾百合子, CardEnum.天空橋朋花 }
-                 ,"LOVE is GAME","MTS"),
+                 ,"LOVE is GAME","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.高山紗代子, CardEnum.松田亜利沙, CardEnum.福田のり子, CardEnum.北上麗花 }
-                 ,"紙・心・ペン・心 - SHISHINPENSHIN -","MTS"),
+                 ,"紙・心・ペン・心 - SHISHINPENSHIN -","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天海春香, CardEnum.望月杏奈, CardEnum.矢吹可奈, CardEnum.ジュリア }
-                 ,"CHEER UP! HEARTS UP!","MTS"),
+                 ,"CHEER UP! HEARTS UP!","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.高槻やよい, CardEnum.佐竹美奈子, CardEnum.七尾百合子, CardEnum.天空橋朋花, CardEnum.如月千早, CardEnum.高山紗代子, CardEnum.松田亜利沙, CardEnum.福田のり子, CardEnum.北上麗花, CardEnum.天海春香, CardEnum.望月杏奈, CardEnum.矢吹可奈, CardEnum.ジュリア }
-                 ,"LOVERS HEART","MTS"),
+                 ,"LOVERS HEART","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.最上静香, CardEnum.中谷育, CardEnum.舞浜歩, CardEnum.篠宮可憐 }
-                 ,"Criminally Dinner ～正餐とイーヴルナイフ～","MTS"),
+                 ,"Criminally Dinner ～正餐とイーヴルナイフ～","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.双海亜美, CardEnum.エミリー, CardEnum.北沢志保, CardEnum.永吉昴 }
-                 ,"スペードのQ","MTS"),
+                 ,"スペードのQ","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.我那覇響, CardEnum.野々原茜, CardEnum.豊川風花, CardEnum.白石紬 }
-                 ,"KING of SPADE","MTS"),
+                 ,"KING of SPADE","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.最上静香, CardEnum.中谷育, CardEnum.舞浜歩, CardEnum.篠宮可憐, CardEnum.双海亜美, CardEnum.エミリー, CardEnum.北沢志保, CardEnum.永吉昴, CardEnum.我那覇響, CardEnum.野々原茜, CardEnum.豊川風花, CardEnum.白石紬 }
-                 ,"SHADE OF SPADE","MTS"),
+                 ,"SHADE OF SPADE","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.水瀬伊織, CardEnum.菊地真, CardEnum.伊吹翼, CardEnum.田中琴葉, CardEnum.徳川まつり, CardEnum.箱崎星梨花, CardEnum.ロコ, CardEnum.横山奈緒, CardEnum.二階堂千鶴, CardEnum.大神環, CardEnum.宮尾美也, CardEnum.周防桃子 }
-                 ,"RisingLight","MTS"),
+                 ,"RisingLight","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.高槻やよい, CardEnum.秋月律子, CardEnum.三浦あずさ, CardEnum.島原エレナ, CardEnum.望月杏奈, CardEnum.木下ひなた, CardEnum.七尾百合子, CardEnum.高坂海美, CardEnum.馬場このみ, CardEnum.真壁瑞希, CardEnum.北上麗花, CardEnum.ジュリア }
-                 ,"ShineLight","MTS"),
+                 ,"ShineLight","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天海春香, CardEnum.星井美希, CardEnum.我那覇響, CardEnum.佐竹美奈子, CardEnum.高山紗代子, CardEnum.松田亜利沙, CardEnum.天空橋朋花, CardEnum.北沢志保, CardEnum.舞浜歩, CardEnum.矢吹可奈, CardEnum.福田のり子, CardEnum.永吉昴, CardEnum.白石紬 }
-                 ,"EmotionLight","MTS"),
+                 ,"EmotionLight","MILLION THE@TER SEASON"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.双海亜美, CardEnum.双海真美, CardEnum.春日未来, CardEnum.最上静香, CardEnum.所恵美, CardEnum.野々原茜, CardEnum.中谷育, CardEnum.エミリー, CardEnum.豊川風花, CardEnum.篠宮可憐, CardEnum.百瀬莉緒, CardEnum.桜守歌織 }
-                 ,"FantasticLight","MTS"),
+                 ,"FantasticLight","MILLION THE@TER SEASON"),
             #endregion
-            #region ASTROLOGIA
+            #region MOVEMENT OF ASTROLOGIA
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.高槻やよい, CardEnum.秋月律子, CardEnum.双海亜美, CardEnum.双海真美 }
-                 ,"ソル","ASTROLOGIA"),
+                 ,"ソル","MOVEMENT OF ASTROLOGIA"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.菊地真, CardEnum.三浦あずさ, CardEnum.我那覇響 }
-                 ,"ルナ","ASTROLOGIA"),
+                 ,"ルナ","MOVEMENT OF ASTROLOGIA"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天海春香, CardEnum.萩原雪歩, CardEnum.水瀬伊織, CardEnum.四条貴音 }
-                 ,"ステラ","ASTROLOGIA"),
+                 ,"ステラ","MOVEMENT OF ASTROLOGIA"),
             #endregion
 
-            #region MTV 
+            #region MILLION THE@TER VARIETY 
             new UnitData(
                  new List<CardEnum>{ CardEnum.我那覇響, CardEnum.佐竹美奈子, CardEnum.中谷育, CardEnum.舞浜歩, CardEnum.篠宮可憐, }
-                 ,"ワールド・アスレチック・COOK-KING ～勝者必食！？スポ食の秋～","MTV"),
+                 ,"ワールド・アスレチック・COOK-KING ～勝者必食！？スポ食の秋～","MILLION THE@TER VARIETY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.所恵美, CardEnum.野々原茜, CardEnum.望月杏奈, CardEnum.高山紗代子 }
-                 ,"ショコラブル＊イブ","MTV"),
+                 ,"ショコラブル＊イブ","MILLION THE@TER VARIETY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.三浦あずさ, CardEnum.徳川まつり, CardEnum.大神環, CardEnum.福田のり子, CardEnum.白石紬 }
-                 ,"Vacation VS Summer ～ナツとヤスミのアンビバレント！～","MTV"),
+                 ,"Vacation VS Summer ～ナツとヤスミのアンビバレント！～","MILLION THE@TER VARIETY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.双海真美, CardEnum.伊吹翼, CardEnum.天空橋朋花, CardEnum.矢吹可奈, CardEnum.北上麗花 }
-                 ,"ミスティック・セレモニーへの招待状","MTV"),
+                 ,"ミスティック・セレモニーへの招待状","MILLION THE@TER VARIETY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.菊地真, CardEnum.最上静香, CardEnum.福田のり子, CardEnum.永吉昴 }
-                 ,"春風満帆スターティング","MTV"),
+                 ,"春風満帆スターティング","MILLION THE@TER VARIETY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.徳川まつり, CardEnum.天空橋朋花, CardEnum.木下ひなた, CardEnum.馬場このみ }
-                 ,"リベレイシング／アロン -LiberaSing Along-","MTV"),
+                 ,"リベレイシング／アロン -LiberaSing Along-","MILLION THE@TER VARIETY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.我那覇響, CardEnum.高坂海美, CardEnum.横山奈緒, CardEnum.宮尾美也, CardEnum.真壁瑞希 }
-                 ,"夢みがちBride","MTV"),
+                 ,"夢みがちBride","MILLION THE@TER VARIETY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.三浦あずさ, CardEnum.二階堂千鶴, CardEnum.豊川風花, CardEnum.北上麗花 }
-                 ,"カンパリーナ♡","MTV"),
+                 ,"カンパリーナ♡","MILLION THE@TER VARIETY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.水瀬伊織, CardEnum.高山紗代子, CardEnum.舞浜歩, CardEnum.百瀬莉緒, CardEnum.永吉昴 }
-                 ,"Dance in the Light","MTV"),
+                 ,"Dance in the Light","MILLION THE@TER VARIETY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.高槻やよい, CardEnum.望月杏奈, CardEnum.木下ひなた, CardEnum.ジュリア }
-                 ,"はぴ！やば！まいまいんど！","MTV"),
+                 ,"はぴ！やば！まいまいんど！","MILLION THE@TER VARIETY"),
             #endregion
-            #region MCA 
+            #region MILLION C@STING 
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.中谷育, CardEnum.馬場このみ, CardEnum.真壁瑞希, CardEnum.周防桃子 }
-                 ,"解夏傀儡","MCA"),
+                 ,"解夏傀儡","MILLION C@STING"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.箱崎星梨花, CardEnum.ロコ, CardEnum.舞浜歩, CardEnum.北上麗花 }
-                 ,"エンダーエンダー","MCA"),
+                 ,"エンダーエンダー","MILLION C@STING"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.田中琴葉, CardEnum.七尾百合子, CardEnum.北沢志保, CardEnum.豊川風花 }
-                 ,"ミステイク・マーダー！","MCA"),
+                 ,"ミステイク・マーダー！","MILLION C@STING"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.菊地真, CardEnum.水瀬伊織, CardEnum.最上静香, CardEnum.松田亜利沙, CardEnum.矢吹可奈 }
-                 ,"銀のテーブル木苺ジャム","MCA"),
+                 ,"銀のテーブル木苺ジャム","MILLION C@STING"),
             #endregion
             #region Comic 
             new UnitData(

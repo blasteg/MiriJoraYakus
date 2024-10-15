@@ -28,8 +28,23 @@
     td.WCGrids {
         height: 50px
     }
+
+    td.unitSettingGrids {
+        height: 50px
+    }
+
+    tr.disabledUnit {
+        background-color: lightgrey;
+        filter: brightness(50%)
+    }
+
+    div.unitSettingBG
+    {
+        background-color: black;
+        color:white;
+    }
 </style>
-<PageTitle>ミリドンジャラの支援サイト</PageTitle>
+<PageTitle>ミリドンジャラ支援サイト</PageTitle>
 <div class="row">
     <div class="col-md-7">
         <h3>手札 Hand</h3>
@@ -88,19 +103,53 @@
         </table>
     </div>
     <div class="col-md-5">
+        <div class="unitSettingBG">
+        <h3>Unit Setting ユニット設置 <a @onclick="()=>unitSettingExpanded=!unitSettingExpanded">@(unitSettingExpanded ? "⮟" : "⮞")</a></h3>
+        <div class="@(unitSettingExpanded?"showingUnits":"hidingUnits")" style="overflow-y:scroll; height:90vh; width:95%">
+            @foreach (var groups in potentialUnits.GroupBy(x => x.Tags))
+            {
+                if (unitTagExpanded.ContainsKey(groups.Key) == false)
+                {
+                    unitTagExpanded.Add(groups.Key, false);
+                }
+                <hr >
+                <h4>@groups.Key<a @onclick="()=>ToggleTagExpand(groups.Key)">@(unitTagExpanded[groups.Key] ? "⮟" : "⮞")</a></h4>
+                <div class="@(unitTagExpanded[groups.Key]?"showingUnits":"hidingUnits")">
+                    <table>
+                        @foreach (var a in groups)
+                        {
+                            <tr style="border-top: solid 2px; height:80px">
+                                <td>
+                                    <InputCheckbox @bind-Value=a.IsEnabled></InputCheckbox>
+                                </td>
+                                <td>@a.Name</td>
+                                @foreach (var b in a?.Idols ?? new List<CardEnum>())
+                                {
+                                    <td class="unitSettingGrids">
+                                        <img class="cardGrid" src=@("/IdolIcons/"+ (int)(b)+".png") />
+                                    </td>
+                                }
+                            </tr>
+
+                        }
+                    </table>
+                </div>
+            }
+            </div>
+        </div>
         @foreach (var groups in potentialUnits.GroupBy(x => x.TotalCount).OrderByDescending(x => x.Key))
         {
             if (unitExpanded.ContainsKey(groups.Key) == false)
             {
-                unitExpanded.Add(groups.Key, true);
+                unitExpanded.Add(groups.Key, false);
             }
             <hr />
             <h3>@groups.Key Card Units <a @onclick="()=>ToggleExpand(groups.Key)">@(unitExpanded[groups.Key] ? "⮟" : "⮞")</a></h3>
             <div class="@(unitExpanded[groups.Key]?"showingUnits":"hidingUnits")" style="overflow-y:scroll; height:400px; width:95%">
                 <table>
-                    @foreach (var a in groups.OrderBy(x => x.Gone).ThenByDescending(x => x.Have))
+                    @foreach (var a in groups.OrderByDescending(x => x.IsEnabled).ThenByDescending(x => x.Have).ThenBy(x => x.Gone))
                     {
-                        <tr style="border-top: solid 2px; height:80px">
+                        <tr style="border-top: solid 2px; height:80px" class="@(a.IsEnabled?"enabledUnit":"disabledUnit")">
                             <td>@a?.Name <br /> @a?.Have / @a?.TotalCount</td>
                             <td></td>
                             @foreach (var b in a?.Idols ?? new List<CardEnum>())
@@ -110,13 +159,13 @@
                                 </td>
                             }
                         </tr>
-                        if (a?.PrWC+a?.AnWC+a?.FaWC+a?.AllWC>0)
+                        if (a?.PrWC + a?.AnWC + a?.FaWC + a?.AllWC > 0)
                         {
                             //Display Wildcards
-                            <tr>
+                            <tr class="@(a.IsEnabled?"enabledUnit":"disabledUnit")">
                                 <td></td>
                                 <td class="WCGrids">+</td>
-                                @for(int i=0;i<a?.PrWC;i++)
+                                @for (int i = 0; i < a?.PrWC; i++)
                                 {
                                     <td class="WCGrids">
                                         <img class="cardGrid normal" src=@("/IdolIcons/"+ (int)(CardEnum.PrWC)+".png") />
@@ -156,6 +205,8 @@
     private Dictionary<CardEnum, bool> available = new Dictionary<CardEnum, bool>();
     private List<UnitEvaluator> potentialUnits = new List<UnitEvaluator>();
     private Dictionary<int, bool> unitExpanded = new Dictionary<int, bool>();
+    private Dictionary<string, bool> unitTagExpanded = new Dictionary<string, bool>();
+    public bool unitSettingExpanded = false;
     protected override async Task OnInitializedAsync()
     {
         foreach (CardEnum a in Enum.GetValues(typeof(CardEnum)))
@@ -210,7 +261,7 @@
             x.AnWC = int.Min(x.TypeCount[TypeEnum.Angel] - x.TypeHave[TypeEnum.Angel], hand.Count(y => y == CardEnum.AnWC));
             x.Have = ownedCards.Count + x.PrWC + x.FaWC + x.AnWC;
             x.Gone = x.Idols.Count(y => available[y] == false) - x.PrWC - x.FaWC - x.AnWC;
-            x.AllWC = int.Min(hand.Count(y => y == CardEnum.AllWC),x.TotalCount-x.Have);
+            x.AllWC = int.Min(hand.Count(y => y == CardEnum.AllWC), x.TotalCount - x.Have);
             x.Have = x.Have + x.AllWC;
             x.Gone = x.Gone - x.AllWC;
         });
@@ -220,6 +271,14 @@
         if (unitExpanded.ContainsKey(n))
         {
             unitExpanded[n] = !unitExpanded[n];
+            StateHasChanged();
+        }
+    }
+    private void ToggleTagExpand(string n)
+    {
+        if (unitTagExpanded.ContainsKey(n))
+        {
+            unitTagExpanded[n] = !unitTagExpanded[n];
             StateHasChanged();
         }
     }
