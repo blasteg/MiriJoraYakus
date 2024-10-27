@@ -5,7 +5,7 @@ namespace MiriJoraYakus.Enums
 {
     public enum CardEnum
     {
-        All,
+        None,
         天海春香,
         如月千早,
         星井美希,

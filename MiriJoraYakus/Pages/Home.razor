@@ -38,10 +38,9 @@
         filter: brightness(50%)
     }
 
-    div.unitSettingBG
-    {
+    div.unitSettingBG {
         background-color: black;
-        color:white;
+        color: white;
     }
 </style>
 <PageTitle>ミリドンジャラ支援サイト</PageTitle>
@@ -65,76 +64,66 @@
         Left Click: Add to Hand; Right Click: Toggle whether card is still available
         <br />
         左クリック:手札に加える; 右クリックで山か河に置く/戻す
+        <hr />
+        排序：
+        <InputRadioGroup Name="sortRadio" @bind-Value=sorting>
+            @foreach (string sortKey in GlobalDatas.sortMethods.Keys)
+            {
+                <InputRadio Name="sortRadio" Value=sortKey /> @(sortKey) 
+            }
+        </InputRadioGroup>
         <table style=" width:100%">
-            @for (int i = 0; i < totalCards / perRow; i++)
+            @for (int i = 0; i < Math.Ceiling( (decimal) GlobalDatas.sortMethods[sorting].Length / perRow); i++)
             {
                 <tr>
                     @for (int j = 0; j < perRow; j++)
                     {
-                        int n = i * perRow + j + 1;
-                        if (n <= totalCards)
+                        if (i * perRow + j < GlobalDatas.sortMethods[sorting].Length)
                         {
+                            CardEnum n = GlobalDatas.sortMethods[sorting][i * perRow + j];
                             <td>
-                                <img class="cardGrid @(available[(CardEnum)n]?"normal":"dimmed")" src=@("/IdolIcons/"+(n)+".png")
-                                     @oncontextmenu="()=>ToggleAvailable(n)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand(n)" />
+                                <img class="cardGrid @(available[n]?"normal":"dimmed")" src=@("/IdolIcons/"+((int)n)+".png")
+                                @oncontextmenu="()=>ToggleAvailable(n)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand(n)" />
                             </td>
                         }
                     }
                 </tr>
             }
-            <tr>
-                <td>
-                    <img class="cardGrid @(available[CardEnum.PrWC]?"normal":"dimmed")" src=@("/IdolIcons/53.png")
-                         @oncontextmenu="()=>ToggleAvailable((int)CardEnum.PrWC)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand((int)CardEnum.PrWC)" />
-                </td>
-                <td>
-                    <img class="cardGrid @(available[CardEnum.FaWC]?"normal":"dimmed")" src=@("/IdolIcons/54.png")
-                         @oncontextmenu="()=>ToggleAvailable((int)CardEnum.FaWC)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand((int)CardEnum.FaWC)" />
-                </td>
-                <td>
-                    <img class="cardGrid @(available[CardEnum.AnWC]?"normal":"dimmed")" src=@("/IdolIcons/55.png")
-                         @oncontextmenu="()=>ToggleAvailable((int)CardEnum.AnWC)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand((int)CardEnum.AnWC)" />
-                </td>
-                <td>
-                    <img class="cardGrid @(available[CardEnum.AllWC]?"normal":"dimmed")" src=@("/IdolIcons/56.png")
-                         @oncontextmenu="()=>ToggleAvailable((int)CardEnum.AllWC)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand((int)CardEnum.AllWC)" />
-                </td>
-            </tr>
         </table>
     </div>
     <div class="col-md-5">
         <div class="unitSettingBG">
-        <h3>Unit Setting ユニット設置 <a @onclick="()=>unitSettingExpanded=!unitSettingExpanded">@(unitSettingExpanded ? "⮟" : "⮞")</a></h3>
-        <div class="@(unitSettingExpanded?"showingUnits":"hidingUnits")" style="overflow-y:scroll; height:90vh; width:95%">
-            @foreach (var groups in potentialUnits.GroupBy(x => x.Tags))
-            {
-                if (unitTagExpanded.ContainsKey(groups.Key) == false)
+            <h3>Unit Setting ユニット設置 <a @onclick="()=>unitSettingExpanded=!unitSettingExpanded">@(unitSettingExpanded ? "⮟" : "⮞")</a></h3>
+            <div class="@(unitSettingExpanded?"showingUnits":"hidingUnits")" style="overflow-y:scroll; height:90vh; width:95%">
+                @foreach (var groups in potentialUnits.GroupBy(x => x.Tags))
                 {
-                    unitTagExpanded.Add(groups.Key, false);
-                }
-                <hr >
-                <h4>@groups.Key<a @onclick="()=>ToggleTagExpand(groups.Key)">@(unitTagExpanded[groups.Key] ? "⮟" : "⮞")</a></h4>
-                <div class="@(unitTagExpanded[groups.Key]?"showingUnits":"hidingUnits")">
-                    <table>
-                        @foreach (var a in groups)
-                        {
-                            <tr style="border-top: solid 2px; height:80px">
-                                <td>
-                                    <InputCheckbox @bind-Value=a.IsEnabled></InputCheckbox>
-                                </td>
-                                <td>@a.Name</td>
-                                @foreach (var b in a?.Idols ?? new List<CardEnum>())
-                                {
-                                    <td class="unitSettingGrids">
-                                        <img class="cardGrid" src=@("/IdolIcons/"+ (int)(b)+".png") />
+                    if (unitTagExpanded.ContainsKey(groups.Key) == false)
+                    {
+                        unitTagExpanded.Add(groups.Key, false);
+                    }
+                    <hr>
+                    <h4><a @onclick="()=>ToggleTagExpand(groups.Key)">@groups.Key@(unitTagExpanded[groups.Key] ? "⮟" : "⮞")</a></h4>
+                    <div class="@(unitTagExpanded[groups.Key]?"showingUnits":"hidingUnits")">
+                        <table>
+                            @foreach (var a in groups)
+                            {
+                                <tr style="border-top: solid 2px; height:80px">
+                                    <td>
+                                        <InputCheckbox @bind-Value=a.IsEnabled></InputCheckbox>
                                     </td>
-                                }
-                            </tr>
+                                    <td>@a.Name</td>
+                                    @foreach (var b in a?.Idols ?? new List<CardEnum>())
+                                    {
+                                        <td class="unitSettingGrids">
+                                            <IdolIcon Class="cardGrid" card=@b />
+                                        </td>
+                                    }
+                                </tr>
 
-                        }
-                    </table>
-                </div>
-            }
+                            }
+                        </table>
+                    </div>
+                }
             </div>
         </div>
         @foreach (var groups in potentialUnits.GroupBy(x => x.TotalCount).OrderByDescending(x => x.Key))
@@ -144,7 +133,7 @@
                 unitExpanded.Add(groups.Key, false);
             }
             <hr />
-            <h3>@groups.Key Card Units <a @onclick="()=>ToggleExpand(groups.Key)">@(unitExpanded[groups.Key] ? "⮟" : "⮞")</a></h3>
+            <h5><a @onclick="()=>ToggleExpand(groups.Key)">@groups.Key Card Units @(unitExpanded[groups.Key] ? "⮟" : "⮞")</a></h5>
             <div class="@(unitExpanded[groups.Key]?"showingUnits":"hidingUnits")" style="overflow-y:scroll; height:400px; width:95%">
                 <table>
                     @foreach (var a in groups.OrderByDescending(x => x.IsEnabled).ThenByDescending(x => x.Have).ThenBy(x => x.Gone))
@@ -155,7 +144,7 @@
                             @foreach (var b in a?.Idols ?? new List<CardEnum>())
                             {
                                 <td class="UnitGrids">
-                                    <img class="cardGrid @(hand.Any(x=>x==b)?"normal" : available[b]? "unseen" : "dimmed" )" src=@("/IdolIcons/"+ (int)(b)+".png") />
+                                    <IdolIcon Class=@("cardGrid "+ (hand.Any(x=>x==b)?"normal" : available[b]? "unseen" : "dimmed")) card=@b />
                                 </td>
                             }
                         </tr>
@@ -168,25 +157,25 @@
                                 @for (int i = 0; i < a?.PrWC; i++)
                                 {
                                     <td class="WCGrids">
-                                        <img class="cardGrid normal" src=@("/IdolIcons/"+ (int)(CardEnum.PrWC)+".png") />
+                                        <IdolIcon Class=@("cardGrid normal") card=@CardEnum.PrWC />
                                     </td>
                                 }
                                 @for (int i = 0; i < a?.FaWC; i++)
                                 {
                                     <td class="WCGrids">
-                                        <img class="cardGrid normal" src=@("/IdolIcons/"+ (int)(CardEnum.FaWC)+".png") />
+                                        <IdolIcon Class=@("cardGrid normal") card=@CardEnum.FaWC />
                                     </td>
                                 }
                                 @for (int i = 0; i < a?.AnWC; i++)
                                 {
                                     <td class="WCGrids">
-                                        <img class="cardGrid normal" src=@("/IdolIcons/"+ (int)(CardEnum.AnWC)+".png") />
+                                        <IdolIcon Class=@("cardGrid normal") card=@CardEnum.AnWC />
                                     </td>
                                 }
                                 @for (int i = 0; i < a?.AllWC; i++)
                                 {
                                     <td class="WCGrids">
-                                        <img class="cardGrid normal" src=@("/IdolIcons/"+ (int)(CardEnum.AllWC)+".png") />
+                                        <IdolIcon Class=@("cardGrid normal") card=@CardEnum.AllWC />
                                     </td>
                                 }
                             </tr>
@@ -207,6 +196,9 @@
     private Dictionary<int, bool> unitExpanded = new Dictionary<int, bool>();
     private Dictionary<string, bool> unitTagExpanded = new Dictionary<string, bool>();
     public bool unitSettingExpanded = false;
+
+    private string sorting = "アイドル順";
+
     protected override async Task OnInitializedAsync()
     {
         foreach (CardEnum a in Enum.GetValues(typeof(CardEnum)))
@@ -215,14 +207,14 @@
         }
         GlobalDatas.BaseUnitData.ForEach(x => potentialUnits.Add(new UnitEvaluator(x)));
     }
-    private void ToggleAvailable(int n)
+    private void ToggleAvailable(CardEnum n)
     {
-        available[(CardEnum)n] = !available[(CardEnum)n];
-        hand.RemoveAll(x => x == (CardEnum)n);
+        available[n] = !available[n];
+        hand.RemoveAll(x => x == n);
         EvaluateHand();
         StateHasChanged();
     }
-    private void AddToHand(int n)
+    private void AddToHand(CardEnum n)
     {
         if (hand.Count >= maxHandSize)
         {
@@ -231,9 +223,9 @@
         }
         else
         {
-            if (available[(CardEnum)n])
+            if (available[n])
             {
-                hand.Add((CardEnum)n);
+                hand.Add(n);
                 EvaluateHand();
                 StateHasChanged();
             }

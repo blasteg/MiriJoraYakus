@@ -1,0 +1,11 @@
+﻿@using MiriJoraYakus.Enums
+<img class=@Class src=@("/IdolIcons/"+ (int)(card)+".png") alt=@card.ToString() title=@card.ToString()/>
+
+@code {
+    [Parameter]
+    public string Class { get; set; } = String.Empty;
+
+    [Parameter]
+    public CardEnum card { get; set; } = CardEnum.None;
+
+}

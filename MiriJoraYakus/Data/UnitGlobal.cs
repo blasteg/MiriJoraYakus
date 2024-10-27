@@ -112,7 +112,7 @@ namespace MiriJoraYakus.Data
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.二階堂千鶴 }
                  ,"Persona Voice","LIVE THE@TER DREAMERS"),
             new UnitData(
-                 new List<CardEnum>{ CardEnum.真壁瑞希, CardEnum.二階堂千鶴 }
+                 new List<CardEnum>{ CardEnum.真壁瑞希, CardEnum.周防桃子 }
                  ,"Cut. Cut. Cut.","LIVE THE@TER DREAMERS"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.宮尾美也 }
