@@ -518,10 +518,26 @@ namespace MiriJoraYakus.Data
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.伊吹翼, CardEnum.白石紬, CardEnum.桜守歌織 }
                  ,"Team8th","Anime"),
             #endregion
-
+            #region St. Million's
+            new UnitData(
+                 new List<CardEnum>{CardEnum.三浦あずさ,CardEnum.高坂海美,CardEnum.中谷育, }
+                 ,"カーテシーフラワー","St. Million's"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.如月千早, CardEnum.永吉昴, CardEnum.篠宮可憐 }
+                 ,"聖ミリオン女学園校歌","St. Million's"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.白石紬, CardEnum.佐竹美奈子, CardEnum.周防桃子, CardEnum.所恵美 }
+                 ,"花びらメモリーズ","St. Million's"),
+            #endregion
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
                  ,"MILLION RADIO!","Other"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.天海春香, CardEnum.菊地真, CardEnum.四条貴音  }
+                 ,"VOY@GER AS","Other"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.高坂海美, CardEnum.望月杏奈, CardEnum.白石紬  }
+                 ,"VOY@GER ML","Other"),
         };
     }
 }
