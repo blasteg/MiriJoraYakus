@@ -53,8 +53,7 @@
                 {
                     int n = i;
                     <td>
-                        <img class="cardGrid" src=@("/IdolIcons/"+ (int)(hand.Count>i?hand.ElementAt(n):0)+".png")
-                             @onclick="()=>RemoveFromHand(n)" />
+                        <IdolIcon card=@(hand.Count>i?hand.ElementAt(n):0) class="cardGrid" leftClickEV="()=>RemoveFromHand(n)" />
                     </td>
                 }
             </tr>
@@ -82,8 +81,7 @@
                         {
                             CardEnum n = GlobalDatas.sortMethods[sorting][i * perRow + j];
                             <td>
-                                <img class="cardGrid @(available[n]?"normal":"dimmed")" src=@("/IdolIcons/"+((int)n)+".png")
-                                @oncontextmenu="()=>ToggleAvailable(n)" @oncontextmenu:preventDefault="true" @onclick="()=>AddToHand(n)" />
+                                <IdolIcon card=n class=@("cardGrid "+ (available[n]?"normal":"dimmed")) leftClickEV="()=>AddToHand(n)" rightClickEV="()=>ToggleAvailable(n)" />
                             </td>
                         }
                     }

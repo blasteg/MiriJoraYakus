@@ -1,5 +1,5 @@
 ﻿@using MiriJoraYakus.Enums
-<img class=@Class src=@("/IdolIcons/"+ (int)(card)+".png") alt=@card.ToString() title=@card.ToString()/>
+<img class=@Class src=@("/IdolIcons/"+ (int)(card)+".png") alt=@card.ToString() title=@card.ToString() @onclick=leftClickEV @oncontextmenu=rightClickEV @oncontextmenu:preventDefault="true" />
 
 @code {
     [Parameter]
@@ -7,5 +7,8 @@
 
     [Parameter]
     public CardEnum card { get; set; } = CardEnum.None;
-
+    [Parameter]
+    public EventCallback leftClickEV { get; set; } = EventCallback.Empty;
+    [Parameter]
+    public EventCallback rightClickEV { get; set; } = EventCallback.Empty;
 }
