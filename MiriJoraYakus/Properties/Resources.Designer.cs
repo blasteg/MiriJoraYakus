@@ -61,15 +61,6 @@ namespace MiriJoraYakus.Properties {
         }
         
         /// <summary>
-        ///   查詢類似  ミックスナッツ 的當地語系化字串。
-        /// </summary>
-        internal static string _ミックスナッツ {
-            get {
-                return ResourceManager.GetString(" ミックスナッツ", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查詢類似 FairyTaleじゃいられない 的當地語系化字串。
         /// </summary>
         internal static string FairyTaleじゃいられない {
@@ -412,6 +403,15 @@ namespace MiriJoraYakus.Properties {
         }
         
         /// <summary>
+        ///   查詢類似 ミックスナッツ 的當地語系化字串。
+        /// </summary>
+        internal static string ミックスナッツ {
+            get {
+                return ResourceManager.GetString("ミックスナッツ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 ミルキーウェイ 的當地語系化字串。
         /// </summary>
         internal static string ミルキーウェイ {
@@ -457,11 +457,11 @@ namespace MiriJoraYakus.Properties {
         }
         
         /// <summary>
-        ///   查詢類似 レオ  的當地語系化字串。
+        ///   查詢類似 レオ 的當地語系化字串。
         /// </summary>
-        internal static string レオ_ {
+        internal static string レオ {
             get {
-                return ResourceManager.GetString("レオ ", resourceCulture);
+                return ResourceManager.GetString("レオ", resourceCulture);
             }
         }
         
@@ -583,11 +583,11 @@ namespace MiriJoraYakus.Properties {
         }
         
         /// <summary>
-        ///   查詢類似 瞳の中のシリウス  的當地語系化字串。
+        ///   查詢類似 瞳の中のシリウス 的當地語系化字串。
         /// </summary>
-        internal static string 瞳の中のシリウス_ {
+        internal static string 瞳の中のシリウス {
             get {
-                return ResourceManager.GetString("瞳の中のシリウス ", resourceCulture);
+                return ResourceManager.GetString("瞳の中のシリウス", resourceCulture);
             }
         }
         

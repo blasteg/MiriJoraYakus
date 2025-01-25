@@ -43,10 +43,10 @@ namespace MiriJoraYakus.Data
                  ,"Good-Sleep, Baby♡","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.秋月律子, CardEnum.佐竹美奈子, CardEnum.松田亜利沙, CardEnum.木下ひなた }
-                 ,"Helloコンチェルト ","LIVE THE@TER PERFORMANCE"),
+                 ,"Helloコンチェルト","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.徳川まつり, CardEnum.高坂海美, CardEnum.宮尾美也 }
-                 ,"瞳の中のシリウス ","LIVE THE@TER PERFORMANCE"),
+                 ,"瞳の中のシリウス","LIVE THE@TER PERFORMANCE"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.菊地真, CardEnum.双海真美, CardEnum.島原エレナ, CardEnum.舞浜歩 }
                  ,"Fu-Wa-Du-Wa","LIVE THE@TER PERFORMANCE"),

@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name=" Bigバルーン◎" xml:space="preserve">
-    <value> Bigバルーン◎</value>
+  <data name="Bigバルーン◎" xml:space="preserve">
+    <value>Bigバルーン◎</value>
   </data>
   <data name=" Do the IDOL!! ～断崖絶壁チュパカブラ～" xml:space="preserve">
     <value> Do the IDOL!! ～断崖絶壁チュパカブラ～</value>
   </data>
-  <data name=" ミックスナッツ" xml:space="preserve">
-    <value> ミックスナッツ</value>
+  <data name="ミックスナッツ" xml:space="preserve">
+    <value>ミックスナッツ</value>
   </data>
   <data name="Clover's Cry 〜神と神降ろしの少女〜" xml:space="preserve">
     <value>Clover's Cry 〜神と神降ろしの少女〜</value>
@@ -153,8 +153,8 @@
   <data name="はぴ！やば！まいまいんど！" xml:space="preserve">
     <value>はぴ！やば！まいまいんど！</value>
   </data>
-  <data name="るきゃん ～3 little candy～&quot;" xml:space="preserve">
-    <value>るきゃん ～3 little candy～"</value>
+  <data name="るきゃん ～3 little candy～" xml:space="preserve">
+    <value>るきゃん ～3 little candy～</value>
   </data>
   <data name="アイドルステアウェイ" xml:space="preserve">
     <value>アイドルステアウェイ</value>
@@ -312,8 +312,8 @@
   <data name="ルナ" xml:space="preserve">
     <value>ルナ</value>
   </data>
-  <data name="レオ " xml:space="preserve">
-    <value>レオ </value>
+  <data name="レオ" xml:space="preserve">
+    <value>レオ</value>
   </data>
   <data name="レジェンドデイズ" xml:space="preserve">
     <value>レジェンドデイズ</value>
@@ -369,8 +369,8 @@
   <data name="真夏のダイヤ☆" xml:space="preserve">
     <value>真夏のダイヤ☆</value>
   </data>
-  <data name="瞳の中のシリウス " xml:space="preserve">
-    <value>瞳の中のシリウス </value>
+  <data name="瞳の中のシリウス" xml:space="preserve">
+    <value>瞳の中のシリウス</value>
   </data>
   <data name="秘密のメモリーズ" xml:space="preserve">
     <value>秘密のメモリーズ</value>
