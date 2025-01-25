@@ -61,11 +61,596 @@ namespace MiriJoraYakus.Properties {
         }
         
         /// <summary>
+        ///   查詢類似  ミックスナッツ 的當地語系化字串。
+        /// </summary>
+        internal static string _ミックスナッツ {
+            get {
+                return ResourceManager.GetString(" ミックスナッツ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 FairyTaleじゃいられない 的當地語系化字串。
+        /// </summary>
+        internal static string FairyTaleじゃいられない {
+            get {
+                return ResourceManager.GetString("FairyTaleじゃいられない", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Helloコンチェルト 的當地語系化字串。
+        /// </summary>
+        internal static string Helloコンチェルト {
+            get {
+                return ResourceManager.GetString("Helloコンチェルト", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Marionetteは眠らない 的當地語系化字串。
+        /// </summary>
+        internal static string Marionetteは眠らない {
+            get {
+                return ResourceManager.GetString("Marionetteは眠らない", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 アイドルステアウェイ 的當地語系化字串。
+        /// </summary>
+        internal static string アイドルステアウェイ {
+            get {
+                return ResourceManager.GetString("アイドルステアウェイ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 アイル 的當地語系化字串。
+        /// </summary>
+        internal static string アイル {
+            get {
+                return ResourceManager.GetString("アイル", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 アクアリウス 的當地語系化字串。
+        /// </summary>
+        internal static string アクアリウス {
+            get {
+                return ResourceManager.GetString("アクアリウス", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 アライブファクター 的當地語系化字串。
+        /// </summary>
+        internal static string アライブファクター {
+            get {
+                return ResourceManager.GetString("アライブファクター", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 アリエス 的當地語系化字串。
+        /// </summary>
+        internal static string アリエス {
+            get {
+                return ResourceManager.GetString("アリエス", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 アルメリア 的當地語系化字串。
+        /// </summary>
+        internal static string アルメリア {
+            get {
+                return ResourceManager.GetString("アルメリア", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ウィルゴ 的當地語系化字串。
+        /// </summary>
+        internal static string ウィルゴ {
+            get {
+                return ResourceManager.GetString("ウィルゴ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 エスケープ 的當地語系化字串。
+        /// </summary>
+        internal static string エスケープ {
+            get {
+                return ResourceManager.GetString("エスケープ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 エターナルハーモニー 的當地語系化字串。
+        /// </summary>
+        internal static string エターナルハーモニー {
+            get {
+                return ResourceManager.GetString("エターナルハーモニー", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 エンダーエンダー 的當地語系化字串。
+        /// </summary>
+        internal static string エンダーエンダー {
+            get {
+                return ResourceManager.GetString("エンダーエンダー", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 オフィウクス 的當地語系化字串。
+        /// </summary>
+        internal static string オフィウクス {
+            get {
+                return ResourceManager.GetString("オフィウクス", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 カーテシーフラワー 的當地語系化字串。
+        /// </summary>
+        internal static string カーテシーフラワー {
+            get {
+                return ResourceManager.GetString("カーテシーフラワー", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 カプリコーン 的當地語系化字串。
+        /// </summary>
+        internal static string カプリコーン {
+            get {
+                return ResourceManager.GetString("カプリコーン", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 カワラナイモノ 的當地語系化字串。
+        /// </summary>
+        internal static string カワラナイモノ {
+            get {
+                return ResourceManager.GetString("カワラナイモノ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 キャンサー 的當地語系化字串。
         /// </summary>
         internal static string キャンサー {
             get {
                 return ResourceManager.GetString("キャンサー", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 クルリウタ 的當地語系化字串。
+        /// </summary>
+        internal static string クルリウタ {
+            get {
+                return ResourceManager.GetString("クルリウタ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 クレシェンドブルー 的當地語系化字串。
+        /// </summary>
+        internal static string クレシェンドブルー {
+            get {
+                return ResourceManager.GetString("クレシェンドブルー", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ココロがかえる場所 的當地語系化字串。
+        /// </summary>
+        internal static string ココロがかえる場所 {
+            get {
+                return ResourceManager.GetString("ココロがかえる場所", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 サジタリアス 的當地語系化字串。
+        /// </summary>
+        internal static string サジタリアス {
+            get {
+                return ResourceManager.GetString("サジタリアス", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ジェミニ 的當地語系化字串。
+        /// </summary>
+        internal static string ジェミニ {
+            get {
+                return ResourceManager.GetString("ジェミニ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ジャスミン 的當地語系化字串。
+        /// </summary>
+        internal static string ジャスミン {
+            get {
+                return ResourceManager.GetString("ジャスミン", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ジレるハートに火をつけて 的當地語系化字串。
+        /// </summary>
+        internal static string ジレるハートに火をつけて {
+            get {
+                return ResourceManager.GetString("ジレるハートに火をつけて", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 スコーピオ 的當地語系化字串。
+        /// </summary>
+        internal static string スコーピオ {
+            get {
+                return ResourceManager.GetString("スコーピオ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ステラ 的當地語系化字串。
+        /// </summary>
+        internal static string ステラ {
+            get {
+                return ResourceManager.GetString("ステラ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ストロベリーポップムーン 的當地語系化字串。
+        /// </summary>
+        internal static string ストロベリーポップムーン {
+            get {
+                return ResourceManager.GetString("ストロベリーポップムーン", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 スペードのQ 的當地語系化字串。
+        /// </summary>
+        internal static string スペードのQ {
+            get {
+                return ResourceManager.GetString("スペードのQ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ソル 的當地語系化字串。
+        /// </summary>
+        internal static string ソル {
+            get {
+                return ResourceManager.GetString("ソル", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 タウラス 的當地語系化字串。
+        /// </summary>
+        internal static string タウラス {
+            get {
+                return ResourceManager.GetString("タウラス", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 たしかな足跡 的當地語系化字串。
+        /// </summary>
+        internal static string たしかな足跡 {
+            get {
+                return ResourceManager.GetString("たしかな足跡", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 トゥインクルリズム 的當地語系化字串。
+        /// </summary>
+        internal static string トゥインクルリズム {
+            get {
+                return ResourceManager.GetString("トゥインクルリズム", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ハルカナミライ 的當地語系化字串。
+        /// </summary>
+        internal static string ハルカナミライ {
+            get {
+                return ResourceManager.GetString("ハルカナミライ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ピコピコプラネッツ 的當地語系化字串。
+        /// </summary>
+        internal static string ピコピコプラネッツ {
+            get {
+                return ResourceManager.GetString("ピコピコプラネッツ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ピスケス 的當地語系化字串。
+        /// </summary>
+        internal static string ピスケス {
+            get {
+                return ResourceManager.GetString("ピスケス", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ビッグバンズバリボー!!!!! 的當地語系化字串。
+        /// </summary>
+        internal static string ビッグバンズバリボー_____ {
+            get {
+                return ResourceManager.GetString("ビッグバンズバリボー!!!!!", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 マイティーセーラーズ 的當地語系化字串。
+        /// </summary>
+        internal static string マイティーセーラーズ {
+            get {
+                return ResourceManager.GetString("マイティーセーラーズ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ミルキーウェイ 的當地語系化字串。
+        /// </summary>
+        internal static string ミルキーウェイ {
+            get {
+                return ResourceManager.GetString("ミルキーウェイ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ラベンダー 的當地語系化字串。
+        /// </summary>
+        internal static string ラベンダー {
+            get {
+                return ResourceManager.GetString("ラベンダー", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 リコッタ 的當地語系化字串。
+        /// </summary>
+        internal static string リコッタ {
+            get {
+                return ResourceManager.GetString("リコッタ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 リブラ 的當地語系化字串。
+        /// </summary>
+        internal static string リブラ {
+            get {
+                return ResourceManager.GetString("リブラ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ルナ 的當地語系化字串。
+        /// </summary>
+        internal static string ルナ {
+            get {
+                return ResourceManager.GetString("ルナ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 レオ  的當地語系化字串。
+        /// </summary>
+        internal static string レオ_ {
+            get {
+                return ResourceManager.GetString("レオ ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 レジェンドデイズ 的當地語系化字串。
+        /// </summary>
+        internal static string レジェンドデイズ {
+            get {
+                return ResourceManager.GetString("レジェンドデイズ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 俠気乱舞 的當地語系化字串。
+        /// </summary>
+        internal static string 俠気乱舞 {
+            get {
+                return ResourceManager.GetString("俠気乱舞", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 創造は始まりの風を連れて 的當地語系化字串。
+        /// </summary>
+        internal static string 創造は始まりの風を連れて {
+            get {
+                return ResourceManager.GetString("創造は始まりの風を連れて", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 夜に輝く星座のように 的當地語系化字串。
+        /// </summary>
+        internal static string 夜に輝く星座のように {
+            get {
+                return ResourceManager.GetString("夜に輝く星座のように", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 夜想令嬢 的當地語系化字串。
+        /// </summary>
+        internal static string 夜想令嬢 {
+            get {
+                return ResourceManager.GetString("夜想令嬢", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 夢みがちBride 的當地語系化字串。
+        /// </summary>
+        internal static string 夢みがちBride {
+            get {
+                return ResourceManager.GetString("夢みがちBride", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 推しってほんと 的當地語系化字串。
+        /// </summary>
+        internal static string 推しってほんと {
+            get {
+                return ResourceManager.GetString("推しってほんと", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 春風満帆スターティング 的當地語系化字串。
+        /// </summary>
+        internal static string 春風満帆スターティング {
+            get {
+                return ResourceManager.GetString("春風満帆スターティング", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 未完成のポラリス 的當地語系化字串。
+        /// </summary>
+        internal static string 未完成のポラリス {
+            get {
+                return ResourceManager.GetString("未完成のポラリス", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 淚を知ること 的當地語系化字串。
+        /// </summary>
+        internal static string 淚を知ること {
+            get {
+                return ResourceManager.GetString("淚を知ること", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 深層マーメイド 的當地語系化字串。
+        /// </summary>
+        internal static string 深層マーメイド {
+            get {
+                return ResourceManager.GetString("深層マーメイド", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 灼熱少女 的當地語系化字串。
+        /// </summary>
+        internal static string 灼熱少女 {
+            get {
+                return ResourceManager.GetString("灼熱少女", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 産声とクラブ 的當地語系化字串。
+        /// </summary>
+        internal static string 産声とクラブ {
+            get {
+                return ResourceManager.GetString("産声とクラブ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 瞳の中のシリウス  的當地語系化字串。
+        /// </summary>
+        internal static string 瞳の中のシリウス_ {
+            get {
+                return ResourceManager.GetString("瞳の中のシリウス ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 秘密のメモリーズ 的當地語系化字串。
+        /// </summary>
+        internal static string 秘密のメモリーズ {
+            get {
+                return ResourceManager.GetString("秘密のメモリーズ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 聖ミリオン女学園校歌 的當地語系化字串。
+        /// </summary>
+        internal static string 聖ミリオン女学園校歌 {
+            get {
+                return ResourceManager.GetString("聖ミリオン女学園校歌", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 花びらメモリーズ 的當地語系化字串。
+        /// </summary>
+        internal static string 花びらメモリーズ {
+            get {
+                return ResourceManager.GetString("花びらメモリーズ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 花咲夜 的當地語系化字串。
+        /// </summary>
+        internal static string 花咲夜 {
+            get {
+                return ResourceManager.GetString("花咲夜", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 解夏傀儡 的當地語系化字串。
+        /// </summary>
+        internal static string 解夏傀儡 {
+            get {
+                return ResourceManager.GetString("解夏傀儡", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 赤い世界が消える頃 的當地語系化字串。
+        /// </summary>
+        internal static string 赤い世界が消える頃 {
+            get {
+                return ResourceManager.GetString("赤い世界が消える頃", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 銀のテーブル木苺ジャム 的當地語系化字串。
+        /// </summary>
+        internal static string 銀のテーブル木苺ジャム {
+            get {
+                return ResourceManager.GetString("銀のテーブル木苺ジャム", resourceCulture);
             }
         }
     }

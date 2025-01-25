@@ -117,7 +117,286 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name=" Bigバルーン◎" xml:space="preserve">
+    <value>Big Balloon◎</value>
+  </data>
+  <data name=" Do the IDOL!! ～断崖絶壁チュパカブラ～" xml:space="preserve">
+    <value>Do the IDOL!! ～Dangaizeppeki Chupacabra～</value>
+  </data>
+  <data name=" ミックスナッツ" xml:space="preserve">
+    <value>Mixnuts</value>
+  </data>
+  <data name="Clover's Cry 〜神と神降ろしの少女〜" xml:space="preserve">
+    <value>Clover's Cry ~Kami to Kamioroshi no Shoujo~</value>
+  </data>
+  <data name="Criminally Dinner ～正餐とイーヴルナイフ～" xml:space="preserve">
+    <value>Criminally Dinner ~Seisan to Evil Knife~</value>
+  </data>
+  <data name="FairyTaleじゃいられない" xml:space="preserve">
+    <value>FairyTale ja Irarenai</value>
+  </data>
+  <data name="Helloコンチェルト" xml:space="preserve">
+    <value>Hello Concerto</value>
+  </data>
+  <data name="Marionetteは眠らない" xml:space="preserve">
+    <value>Marionette wa Nemuranai</value>
+  </data>
+  <data name="Vacation VS Summer ～ナツとヤスミのアンビバレント！～" xml:space="preserve">
+    <value>Vacation VS Summer ~Natsu to Yasumi no Ambivalent!~</value>
+  </data>
+  <data name="≡君彩≡" xml:space="preserve">
+    <value>≡Kimidori≡</value>
+  </data>
+  <data name="たしかな足跡" xml:space="preserve">
+    <value>Tashika na Ashiato</value>
+  </data>
+  <data name="はぴ！やば！まいまいんど！" xml:space="preserve">
+    <value>Happy! Yaba! My Mind!</value>
+  </data>
+  <data name="るきゃん ～3 little candy～&quot;" xml:space="preserve">
+    <value>LilCan ～3 little candy～</value>
+  </data>
+  <data name="アイドルステアウェイ" xml:space="preserve">
+    <value>Idol Stairway</value>
+  </data>
+  <data name="アイル" xml:space="preserve">
+    <value>Aisle</value>
+  </data>
+  <data name="アクアリウス" xml:space="preserve">
+    <value>Aquarius</value>
+  </data>
+  <data name="アライブファクター" xml:space="preserve">
+    <value>Alive Factor</value>
+  </data>
+  <data name="アリエス" xml:space="preserve">
+    <value>Aries</value>
+  </data>
+  <data name="アルメリア" xml:space="preserve">
+    <value>Armeria</value>
+  </data>
+  <data name="ウィルゴ" xml:space="preserve">
+    <value>Virgo</value>
+  </data>
+  <data name="エスケープ" xml:space="preserve">
+    <value>Escape</value>
+  </data>
+  <data name="エターナルハーモニー" xml:space="preserve">
+    <value>Eternal Harmony </value>
+  </data>
+  <data name="エンダーエンダー" xml:space="preserve">
+    <value>Ender Ender</value>
+  </data>
+  <data name="オフィウクス" xml:space="preserve">
+    <value>Ophiuchus</value>
+  </data>
+  <data name="オペラセリア・煌輝座" xml:space="preserve">
+    <value>Opera Seria Kiramekiza</value>
+  </data>
+  <data name="オーディナリィ・クローバー" xml:space="preserve">
+    <value>Ordinary Clover</value>
+  </data>
+  <data name="カプリコーン" xml:space="preserve">
+    <value>Capricorn</value>
+  </data>
+  <data name="カワラナイモノ" xml:space="preserve">
+    <value>Kawaranai Mono</value>
+  </data>
+  <data name="カンパリーナ♡" xml:space="preserve">
+    <value>Camparina♡</value>
+  </data>
+  <data name="カーテシーフラワー" xml:space="preserve">
+    <value>Curtsy Flower</value>
+  </data>
   <data name="キャンサー" xml:space="preserve">
     <value>Cancer</value>
+  </data>
+  <data name="クルリウタ" xml:space="preserve">
+    <value>Kururi Uta</value>
+  </data>
+  <data name="クレシェンドブルー" xml:space="preserve">
+    <value>Crescendo Blue</value>
+  </data>
+  <data name="ココロがかえる場所" xml:space="preserve">
+    <value>Kokoro ga Kaeru Basho</value>
+  </data>
+  <data name="サジタリアス" xml:space="preserve">
+    <value>Sagittarius</value>
+  </data>
+  <data name="ショコラブル＊イブ" xml:space="preserve">
+    <value>ChocoLove Ru*Eve</value>
+  </data>
+  <data name="シークレットジュエル 〜魅惑の金剛石〜" xml:space="preserve">
+    <value>Secret Jewel ~Miwaku no Kongouseki~</value>
+  </data>
+  <data name="ジェネシス×ネメシス" xml:space="preserve">
+    <value>Genesis×Nemesis</value>
+  </data>
+  <data name="ジェミニ" xml:space="preserve">
+    <value>Gemini</value>
+  </data>
+  <data name="ジャスミン" xml:space="preserve">
+    <value>Jasmine</value>
+  </data>
+  <data name="ジャングル☆パーティー" xml:space="preserve">
+    <value>Jungle☆Party</value>
+  </data>
+  <data name="ジレるハートに火をつけて" xml:space="preserve">
+    <value>Jireru Heart ni Hi o Tsukete</value>
+  </data>
+  <data name="スコーピオ" xml:space="preserve">
+    <value>Scorpio</value>
+  </data>
+  <data name="ステラ" xml:space="preserve">
+    <value>Stella</value>
+  </data>
+  <data name="ストロベリーポップムーン" xml:space="preserve">
+    <value>Strawberry Pop Moon</value>
+  </data>
+  <data name="スペードのQ" xml:space="preserve">
+    <value>Spade no Q</value>
+  </data>
+  <data name="ソル" xml:space="preserve">
+    <value>Sol</value>
+  </data>
+  <data name="タウラス" xml:space="preserve">
+    <value>Taurus</value>
+  </data>
+  <data name="ダイヤモンドダイバー◇" xml:space="preserve">
+    <value>Diamond Diver◇</value>
+  </data>
+  <data name="トゥインクルリズム" xml:space="preserve">
+    <value>Twinkle Rhythm</value>
+  </data>
+  <data name="トレフル・ド・ノエル" xml:space="preserve">
+    <value>Trèfle de Noël</value>
+  </data>
+  <data name="ハルカナミライ" xml:space="preserve">
+    <value>Haruka na Mirai</value>
+  </data>
+  <data name="ビッグバンズバリボー!!!!!" xml:space="preserve">
+    <value>Big Bang's Volleyball!!!!!</value>
+  </data>
+  <data name="ピコピコプラネッツ" xml:space="preserve">
+    <value>Pikopiko Planets</value>
+  </data>
+  <data name="ピスケス" xml:space="preserve">
+    <value>Pisces</value>
+  </data>
+  <data name="マイティーセーラーズ" xml:space="preserve">
+    <value>Mighty Sailors</value>
+  </data>
+  <data name="ミスティック・セレモニーへの招待状" xml:space="preserve">
+    <value>Mystic Ceremony e no Shoutaijou</value>
+  </data>
+  <data name="ミステイク・マーダー！" xml:space="preserve">
+    <value>Mistake Murder!</value>
+  </data>
+  <data name="ミルキーウェイ" xml:space="preserve">
+    <value>Milky Way</value>
+  </data>
+  <data name="ラスト・アクトレス" xml:space="preserve">
+    <value>Last Actress</value>
+  </data>
+  <data name="ラベンダー" xml:space="preserve">
+    <value>Lavender</value>
+  </data>
+  <data name="リコッタ" xml:space="preserve">
+    <value>Ricotta</value>
+  </data>
+  <data name="リブラ" xml:space="preserve">
+    <value>Libra</value>
+  </data>
+  <data name="リベレイシング／アロン -LiberaSing Along-" xml:space="preserve">
+    <value>LiberaSing/Along</value>
+  </data>
+  <data name="ルナ" xml:space="preserve">
+    <value>Luna</value>
+  </data>
+  <data name="レオ " xml:space="preserve">
+    <value>Leo</value>
+  </data>
+  <data name="レジェンドデイズ" xml:space="preserve">
+    <value>Legend Days</value>
+  </data>
+  <data name="ワールド・アスレチック・COOK-KING ～勝者必食！？スポ食の秋～" xml:space="preserve">
+    <value>World Athletic COOK-KING ~Shousha Hisshoku!? Sports-shoku no Aki~</value>
+  </data>
+  <data name="乙女ストーム！" xml:space="preserve">
+    <value>Otome Storm!</value>
+  </data>
+  <data name="俠気乱舞" xml:space="preserve">
+    <value>Kyouki Ranbu</value>
+  </data>
+  <data name="創造は始まりの風を連れて" xml:space="preserve">
+    <value>Souzou wa Hajimari no Kaze o Tsurete</value>
+  </data>
+  <data name="合言葉はスタートアップ！" xml:space="preserve">
+    <value>Aikotoba wa Start Up!</value>
+  </data>
+  <data name="夜に輝く星座のように" xml:space="preserve">
+    <value>Yoru ni Kagayaku Seiza no You ni</value>
+  </data>
+  <data name="夜想令嬢" xml:space="preserve">
+    <value>GRAC&amp;E NOCTURNE</value>
+  </data>
+  <data name="夢みがちBride" xml:space="preserve">
+    <value>Yumemigachi Bride</value>
+  </data>
+  <data name="成長Chu→LOVER!!" xml:space="preserve">
+    <value>SeichouChu→LOVER!!</value>
+  </data>
+  <data name="推しってほんと" xml:space="preserve">
+    <value>Oshi tte Honto</value>
+  </data>
+  <data name="春風満帆スターティング" xml:space="preserve">
+    <value>Shunpuumanpan Starting</value>
+  </data>
+  <data name="未完成のポラリス" xml:space="preserve">
+    <value>Mikansei no Polaris</value>
+  </data>
+  <data name="淚を知ること" xml:space="preserve">
+    <value>Namida o Shiru Koto</value>
+  </data>
+  <data name="深層マーメイド" xml:space="preserve">
+    <value>Shinsou Mermaid</value>
+  </data>
+  <data name="灼熱少女" xml:space="preserve">
+    <value>Burning Girl</value>
+  </data>
+  <data name="産声とクラブ" xml:space="preserve">
+    <value>Ubugoe to Club</value>
+  </data>
+  <data name="真夏のダイヤ☆" xml:space="preserve">
+    <value>Manatsu no Dia☆</value>
+  </data>
+  <data name="瞳の中のシリウス " xml:space="preserve">
+    <value>Hitomi no Naka no Sirius</value>
+  </data>
+  <data name="秘密のメモリーズ" xml:space="preserve">
+    <value>Himitsu no Memories</value>
+  </data>
+  <data name="紙・心・ペン・心 - SHISHINPENSHIN -" xml:space="preserve">
+    <value>SHISHINPENSHIN</value>
+  </data>
+  <data name="聖ミリオン女学園校歌" xml:space="preserve">
+    <value>St. Million Jogakuen Kouka</value>
+  </data>
+  <data name="花びらメモリーズ" xml:space="preserve">
+    <value>Hanabira Memories</value>
+  </data>
+  <data name="花咲夜" xml:space="preserve">
+    <value>Hanasakuya</value>
+  </data>
+  <data name="解夏傀儡" xml:space="preserve">
+    <value>Gege Kairai</value>
+  </data>
+  <data name="赤い世界が消える頃" xml:space="preserve">
+    <value>Akai Sekai ga Kieru Koro</value>
+  </data>
+  <data name="銀のテーブル木苺ジャム" xml:space="preserve">
+    <value>Gin no Table Raspberry Jam</value>
+  </data>
+  <data name="閃光☆HANABI団" xml:space="preserve">
+    <value>Senkou☆HANABI Dan</value>
   </data>
 </root>

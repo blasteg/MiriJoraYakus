@@ -60,34 +60,34 @@ namespace MiriJoraYakus.Data
             #region LIVE THE@TER HARMONY
             new UnitData(
                  new List<CardEnum>{ CardEnum.高槻やよい, CardEnum.水瀬伊織, CardEnum.秋月律子, CardEnum.双海亜美, CardEnum.我那覇響 }
-                 ,"合言葉はスタートアップ！","LIVE THE@TER HARMONY"),
+                 ,"レジェンドデイズ","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.伊吹翼, CardEnum.望月杏奈, CardEnum.七尾百合子, CardEnum.真壁瑞希 }
-                 ,"Growing Storm!","LIVE THE@TER HARMONY"),
+                 ,"乙女ストーム！","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.北沢志保, CardEnum.北上麗花 }
-                 ,"Shooting Stars","LIVE THE@TER HARMONY"),
+                 ,"クレシェンドブルー","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.徳川まつり, CardEnum.エミリー, CardEnum.豊川風花, CardEnum.ジュリア }
-                 ,"Eternal Harmony","LIVE THE@TER HARMONY"),
+                 ,"エターナルハーモニー","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天海春香, CardEnum.松田亜利沙, CardEnum.横山奈緒, CardEnum.福田のり子, CardEnum.周防桃子 }
-                 ,"HOME, SWEET FRIENDSHIP","LIVE THE@TER HARMONY"),
+                 ,"リコッタ","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.田中琴葉, CardEnum.所恵美, CardEnum.高坂海美, CardEnum.大神環, CardEnum.宮尾美也 }
-                 ,"ジレるハートに火をつけて","LIVE THE@TER HARMONY"),
+                 ,"灼熱少女","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.菊地真, CardEnum.三浦あずさ, CardEnum.舞浜歩, CardEnum.矢吹可奈 }
-                 ,"Birth of Color","LIVE THE@TER HARMONY"),
+                 ,"BIRTH","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.双海真美, CardEnum.佐竹美奈子, CardEnum.中谷育, CardEnum.木下ひなた, CardEnum.馬場このみ }
-                 ,"ドリームトラベラー","LIVE THE@TER HARMONY"),
+                 ,"ミックスナッツ","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.高山紗代子, CardEnum.天空橋朋花, CardEnum.二階堂千鶴, CardEnum.永吉昴 }
-                 ,"星屑のシンフォニア","LIVE THE@TER HARMONY"),
+                 ,"ミルキーウェイ","LIVE THE@TER HARMONY"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.四条貴音, CardEnum.島原エレナ, CardEnum.ロコ, CardEnum.篠宮可憐, CardEnum.百瀬莉緒 }
-                 ,"STANDING ALIVE","LIVE THE@TER HARMONY"),
+                 ,"ARRIVE","LIVE THE@TER HARMONY"),
             #endregion
             #region LIVE THE@TER DREAMERS
             new UnitData(
@@ -195,16 +195,16 @@ namespace MiriJoraYakus.Data
                  ,"Sunshine Rhythm","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.所恵美, CardEnum.舞浜歩, CardEnum.真壁瑞希 }
-                 ,"サジタリアス ","LIVE THE@TER FORWARD"),
+                 ,"サジタリアス","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.天空橋朋花, CardEnum.二階堂千鶴, CardEnum.篠宮可憐 }
-                 ,"ピスケス ","LIVE THE@TER FORWARD"),
+                 ,"ピスケス","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.七尾百合子, CardEnum.永吉昴 }
-                 ,"ウィルゴ ","LIVE THE@TER FORWARD"),
+                 ,"ウィルゴ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.高山紗代子, CardEnum.北上麗花, CardEnum.ジュリア }
-                 ,"アクアリウス ","LIVE THE@TER FORWARD"),
+                 ,"アクアリウス","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.所恵美, CardEnum.舞浜歩, CardEnum.真壁瑞希, CardEnum.天空橋朋花, CardEnum.二階堂千鶴, CardEnum.篠宮可憐, CardEnum.最上静香, CardEnum.七尾百合子, CardEnum.永吉昴, CardEnum.高山紗代子, CardEnum.北上麗花, CardEnum.ジュリア, CardEnum.白石紬 }
                  ,"BlueMoon Harmony","LIVE THE@TER FORWARD"),
@@ -213,13 +213,13 @@ namespace MiriJoraYakus.Data
                  ,"スコーピオ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.大神環 }
-                 ,"アリエス ","LIVE THE@TER FORWARD"),
+                 ,"アリエス","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.徳川まつり, CardEnum.宮尾美也 }
-                 ,"タウラス ","LIVE THE@TER FORWARD"),
+                 ,"タウラス","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.馬場このみ, CardEnum.豊川風花, CardEnum.周防桃子 }
-                 ,"ジェミニ ","LIVE THE@TER FORWARD"),
+                 ,"ジェミニ","LIVE THE@TER FORWARD"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.松田亜利沙, CardEnum.高坂海美, CardEnum.北沢志保, CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.大神環, CardEnum.春日未来, CardEnum.徳川まつり, CardEnum.宮尾美也, CardEnum.馬場このみ, CardEnum.豊川風花, CardEnum.周防桃子, CardEnum.田中琴葉}
                  ,"Starlight Melody","LIVE THE@TER FORWARD"),
@@ -463,6 +463,9 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.星井美希, CardEnum.高槻やよい, CardEnum.望月杏奈, CardEnum.木下ひなた, CardEnum.ジュリア }
                  ,"はぴ！やば！まいまいんど！","MILLION THE@TER VARIETY"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.二階堂千鶴,CardEnum.桜守歌織, CardEnum.島原エレナ, CardEnum.箱崎星梨花, CardEnum.ロコ }
+                 ,"Pomegranate","MILLION THE@TER VARIETY"),
             #endregion
             #region MILLION C@STING 
             new UnitData(
@@ -481,7 +484,7 @@ namespace MiriJoraYakus.Data
             #region Comic 
             new UnitData(
                  new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.真壁瑞希, CardEnum.ジュリア }
-                 ,"アイル ","Comic"),
+                 ,"アイル","Comic"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.北沢志保, CardEnum.北上麗花 }
                  ,"Flooding","Comic"),
@@ -528,6 +531,35 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.白石紬, CardEnum.佐竹美奈子, CardEnum.周防桃子, CardEnum.所恵美 }
                  ,"花びらメモリーズ","St. Million's"),
+            #endregion
+            #region Stardom Road
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.徳川まつり, CardEnum.高坂海美, CardEnum.豊川風花, CardEnum.周防桃子, }
+                 ,"アイドルステアウェイ","Stardom Road"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.天空橋朋花, CardEnum.馬場このみ, }
+                 ,"Upper Dog","Stardom Road"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.高山紗代子, CardEnum.松田亜利沙, CardEnum.二階堂千鶴, CardEnum.篠宮可憐, CardEnum.永吉昴, }
+                 ,"Hypernova","Stardom Road"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.田中琴葉, CardEnum.島原エレナ, CardEnum.佐竹美奈子, CardEnum.所恵美, CardEnum.矢吹可奈, }
+                 ,"推しってほんと","Stardom Road"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.望月杏奈, CardEnum.舞浜歩, CardEnum.横山奈緒, CardEnum.宮尾美也 }
+                 ,"未完成のポラリス","Stardom Road"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.木下ひなた, CardEnum.福田のり子, CardEnum.白石紬 }
+                 ,"Sky Survive","Stardom Road"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.春日未来, CardEnum.エミリー, CardEnum.北沢志保, CardEnum.北上麗花 }
+                 ,"All Alone","Stardom Road"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.中谷育, CardEnum.大神環, CardEnum.ジュリア, CardEnum.桜守歌織, }
+                 ,"淚を知ること","Stardom Road"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.最上静香, CardEnum.ロコ, CardEnum.七尾百合子, CardEnum.真壁瑞希, CardEnum.百瀬莉緒 }
+                 ,"Act 9","Stardom Road"),
             #endregion
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
