@@ -559,7 +559,7 @@ namespace MiriJoraYakus.Data
                  ,"淚を知ること","Stardom Road"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.ロコ, CardEnum.七尾百合子, CardEnum.真壁瑞希, CardEnum.百瀬莉緒 }
-                 ,"Act 9","Stardom Road"),
+                 ,"I.V.","Stardom Road"),
             #endregion
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
