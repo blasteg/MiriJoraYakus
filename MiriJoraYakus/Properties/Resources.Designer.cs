@@ -653,5 +653,14 @@ namespace MiriJoraYakus.Properties {
                 return ResourceManager.GetString("銀のテーブル木苺ジャム", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查詢類似 頂上決戦ヴィクトリー!!!!!! 的當地語系化字串。
+        /// </summary>
+        internal static string 頂上決戦ヴィクトリー______ {
+            get {
+                return ResourceManager.GetString("頂上決戦ヴィクトリー!!!!!!", resourceCulture);
+            }
+        }
     }
 }

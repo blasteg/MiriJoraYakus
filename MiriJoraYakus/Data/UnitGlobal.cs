@@ -505,9 +505,9 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.田中琴葉, CardEnum.所恵美, CardEnum.七尾百合子, CardEnum.大神環, CardEnum.豊川風花 }
                  ,"Team3rd ","Anime"),
-            //new UnitData(
-            //     new List<CardEnum>{ CardEnum.ロコ, CardEnum.松田亜利沙, CardEnum.横山奈緒, CardEnum.二階堂千鶴, CardEnum.馬場このみ, CardEnum.周防桃子 }
-            //     ,"Team4th","Anime"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.ロコ, CardEnum.松田亜利沙, CardEnum.横山奈緒, CardEnum.二階堂千鶴, CardEnum.馬場このみ, CardEnum.周防桃子 }
+                 ,"Team4th","Anime"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.箱崎星梨花, CardEnum.野々原茜, CardEnum.高山紗代子, CardEnum.中谷育, CardEnum.宮尾美也 }
                  ,"Team5th","Anime"),
@@ -560,6 +560,17 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.最上静香, CardEnum.ロコ, CardEnum.七尾百合子, CardEnum.真壁瑞希, CardEnum.百瀬莉緒 }
                  ,"I.V.","Stardom Road"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.天海春香, CardEnum.田中琴葉, CardEnum.中谷育, CardEnum.松田亜利沙, CardEnum.馬場このみ }
+                 ,"Bestest!!!","Stardom Road"),
+            #endregion
+            #region Battle of Theater
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.菊地真,CardEnum.最上静香, CardEnum.エミリー,CardEnum.天空橋朋花,  CardEnum.大神環, CardEnum.北上麗花  }
+                 ,"頂上決戦ヴィクトリー!!!!!!","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.横山奈緒, CardEnum.真壁瑞希, CardEnum.永吉昴 }
+                 ,"Clash of Colors","Battle of Theater"),
             #endregion
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
@@ -570,6 +581,12 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.高坂海美, CardEnum.望月杏奈, CardEnum.白石紬  }
                  ,"VOY@GER ML","Other"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.篠宮可憐, CardEnum.桜守歌織  }
+                 ,"唸れ！ミリオンアーマー！","MILLION ARMOR"),
+            new UnitData(
+                 new List<CardEnum>{CardEnum.星井美希,CardEnum.高山紗代子, CardEnum.中谷育,  CardEnum.エミリー,  CardEnum.北沢志保 }
+                 ,"Lullaby for Armors","MILLION ARMOR"),
         };
     }
 }
