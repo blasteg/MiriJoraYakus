@@ -571,6 +571,15 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.横山奈緒, CardEnum.真壁瑞希, CardEnum.永吉昴 }
                  ,"Clash of Colors","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.百瀬莉緒, CardEnum.宮尾美也, CardEnum.ジュリア, CardEnum.星井美希 }
+                 ,"Luvliminal image","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.高坂海美, CardEnum.野々原茜, CardEnum.矢吹可奈, CardEnum.豊川風花, CardEnum.永吉昴, CardEnum.白石紬 }
+                 ,"Hug a nice day!","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.双海亜美, CardEnum.春日未来, CardEnum.望月杏奈, CardEnum.七尾百合子 }
+                 ,"SHIMMER","Battle of Theater"),
             #endregion
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
