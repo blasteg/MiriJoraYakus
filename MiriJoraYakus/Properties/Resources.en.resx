@@ -405,4 +405,10 @@
   <data name="頂上決戦ヴィクトリー!!!!!!" xml:space="preserve">
     <value>Choujou Kessen Victory!!!!!!</value>
   </data>
+  <data name="不思議発見ラボ" xml:space="preserve">
+    <value>&#x8;Fushigi Hakken Lab</value>
+  </data>
+  <data name="鉄の羽のエクソダス" xml:space="preserve">
+    <value>Tetsu no Hane no Exodus</value>
+  </data>
 </root>

@@ -475,6 +475,15 @@ namespace MiriJoraYakus.Properties {
         }
         
         /// <summary>
+        ///   查詢類似 不思議発見ラボ 的當地語系化字串。
+        /// </summary>
+        internal static string 不思議発見ラボ {
+            get {
+                return ResourceManager.GetString("不思議発見ラボ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 俠気乱舞 的當地語系化字串。
         /// </summary>
         internal static string 俠気乱舞 {
@@ -642,6 +651,15 @@ namespace MiriJoraYakus.Properties {
         internal static string 赤い世界が消える頃 {
             get {
                 return ResourceManager.GetString("赤い世界が消える頃", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 鉄の羽のエクソダス 的當地語系化字串。
+        /// </summary>
+        internal static string 鉄の羽のエクソダス {
+            get {
+                return ResourceManager.GetString("鉄の羽のエクソダス", resourceCulture);
             }
         }
         

@@ -580,6 +580,15 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.双海亜美, CardEnum.春日未来, CardEnum.望月杏奈, CardEnum.七尾百合子 }
                  ,"SHIMMER","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.佐竹美奈子, CardEnum.所恵美, CardEnum.箱崎星梨花, CardEnum.大神環, CardEnum.周防桃子}
+                 ,"鉄の羽のエクソダス","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.木下ひなた, CardEnum.矢吹可奈, CardEnum.白石紬 }
+                 ,"不思議発見ラボ！","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.所恵美, CardEnum.野々原茜, CardEnum.高山紗代子 }
+                 ,"Texting you","Battle of Theater"),
             #endregion
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
@@ -590,6 +599,9 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.高坂海美, CardEnum.望月杏奈, CardEnum.白石紬  }
                  ,"VOY@GER ML","Other"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.菊地真  }
+                 ,"Halftone","Other"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.篠宮可憐, CardEnum.桜守歌織  }
                  ,"唸れ！ミリオンアーマー！","MILLION ARMOR"),
