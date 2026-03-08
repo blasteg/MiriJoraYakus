@@ -589,6 +589,16 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.所恵美, CardEnum.野々原茜, CardEnum.高山紗代子 }
                  ,"Texting you","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.三浦あずさ, CardEnum.我那覇響, CardEnum.島原エレナ, CardEnum.七尾百合子, CardEnum.百瀬莉緒, CardEnum.真壁瑞希 }
+                 ,"FAITH/TO/FAITH","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.三浦あずさ, CardEnum.双海真美, CardEnum.島原エレナ, CardEnum.馬場このみ, CardEnum.豊川風花, CardEnum.北上麗花 }
+                 ,"Especially Angel♡","Battle of Theater"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.如月千早, CardEnum.四条貴音, CardEnum.最上静香, CardEnum.ロコ, CardEnum.二階堂千鶴 }
+                 ,"Fairy Daysは絶え間ない","Battle of Theater"),
+           
             #endregion
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
@@ -602,6 +612,12 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.萩原雪歩, CardEnum.菊地真  }
                  ,"Halftone","Other"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.星井美希, CardEnum.四条貴音, CardEnum.我那覇響 }
+                 ,"Project Fairy","Other"),
+            new UnitData(
+                 new List<CardEnum>{ CardEnum.天海春香, CardEnum.菊地真, CardEnum.水瀬伊織, CardEnum.我那覇響, CardEnum.春日未来, CardEnum.田中琴葉 }
+                 ,"KAWAII ウォーズ","Other"),
             new UnitData(
                  new List<CardEnum>{ CardEnum.篠宮可憐, CardEnum.桜守歌織  }
                  ,"唸れ！ミリオンアーマー！","MILLION ARMOR"),
