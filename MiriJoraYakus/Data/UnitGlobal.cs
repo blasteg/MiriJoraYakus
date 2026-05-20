@@ -598,7 +598,15 @@ namespace MiriJoraYakus.Data
             new UnitData(
                  new List<CardEnum>{ CardEnum.如月千早, CardEnum.四条貴音, CardEnum.最上静香, CardEnum.ロコ, CardEnum.二階堂千鶴 }
                  ,"Fairy Daysは絶え間ない","Battle of Theater"),
-           
+           new UnitData(
+                 new List<CardEnum>{ CardEnum.松田亜利沙, CardEnum.エミリー, CardEnum.田中琴葉, CardEnum.高坂海美, CardEnum.佐竹美奈子 }
+                 ,"Prima Princess!!","Battle of Theater"),
+           new UnitData(
+                 new List<CardEnum>{ CardEnum.ジュリア, CardEnum.高槻やよい, CardEnum.天海春香, CardEnum.馬場このみ, CardEnum.福田のり子, CardEnum.舞浜歩 }
+                 ,"Stick to my weapon","Battle of Theater"),
+           new UnitData(
+                 new List<CardEnum>{ CardEnum.大神環, CardEnum.高槻やよい, CardEnum.水瀬伊織, CardEnum.我那覇響, CardEnum.中谷育, CardEnum.周防桃子 }
+                 ,"100てん☆ナンバーワン!","Battle of Theater"),
             #endregion
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
