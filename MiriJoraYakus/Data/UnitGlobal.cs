@@ -607,6 +607,20 @@ namespace MiriJoraYakus.Data
            new UnitData(
                  new List<CardEnum>{ CardEnum.大神環, CardEnum.高槻やよい, CardEnum.水瀬伊織, CardEnum.我那覇響, CardEnum.中谷育, CardEnum.周防桃子 }
                  ,"100てん☆ナンバーワン!","Battle of Theater"),
+           new UnitData(
+                 new List<CardEnum>{ CardEnum.伊吹翼, CardEnum.福田のり子, CardEnum.秋月律子, CardEnum.天海春香, CardEnum.北沢志保, CardEnum.箱崎星梨花 }
+                 ,"INVISIBLE LIGHT","Battle of Theater"),
+           new UnitData(
+                 new List<CardEnum>{ CardEnum.天空橋朋花, CardEnum.篠宮可憐, CardEnum.菊地真, CardEnum.桜守歌織, CardEnum.徳川まつり, CardEnum.舞浜歩 }
+                 ,"BLACK LIPS","Battle of Theater"),
+           new UnitData(
+                 new List<CardEnum>{ CardEnum.春日未来, CardEnum.木下ひなた, CardEnum.矢吹可奈, CardEnum.桜守歌織, CardEnum.二階堂千鶴, CardEnum.桜守歌織 }
+                 ,"Glow Together","Battle of Theater"),
+            #endregion
+            #region X-Stream Theater
+           new UnitData(
+                 new List<CardEnum>{ CardEnum.春日未来, CardEnum.望月杏奈, CardEnum.矢吹可奈, CardEnum.白石紬 }
+                 ,"一旦愛して♡","X-Stream Theater"),
             #endregion
             new UnitData(
                  new List<CardEnum>{ CardEnum.春日未来, CardEnum.最上静香, CardEnum.箱崎星梨花 }
