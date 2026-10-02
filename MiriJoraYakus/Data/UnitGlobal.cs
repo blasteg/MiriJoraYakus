@@ -614,7 +614,7 @@ namespace MiriJoraYakus.Data
                  new List<CardEnum>{ CardEnum.天空橋朋花, CardEnum.篠宮可憐, CardEnum.菊地真, CardEnum.桜守歌織, CardEnum.徳川まつり, CardEnum.舞浜歩 }
                  ,"BLACK LIPS","Battle of Theater"),
            new UnitData(
-                 new List<CardEnum>{ CardEnum.春日未来, CardEnum.木下ひなた, CardEnum.矢吹可奈, CardEnum.桜守歌織, CardEnum.二階堂千鶴, CardEnum.桜守歌織 }
+                 new List<CardEnum>{ CardEnum.春日未来, CardEnum.木下ひなた, CardEnum.矢吹可奈, CardEnum.北沢志保, CardEnum.二階堂千鶴, CardEnum.桜守歌織 }
                  ,"Glow Together","Battle of Theater"),
             #endregion
             #region X-Stream Theater
